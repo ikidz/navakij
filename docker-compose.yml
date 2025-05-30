@@ -1,0 +1,38 @@
+services:
+  navakij-dev-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: navakij-dev-app
+    volumes:
+      - ./navakijwebsite:/var/www/html
+    working_dir: /var/www/html
+    depends_on:
+      - navakij-dev-db
+    expose:
+      - "9000"
+
+  navakij-dev-nginx:
+    image: nginx:latest
+    container_name: navakij-dev-nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./navakijwebsite:/var/www/html
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - navakij-dev-app
+
+  navakij-dev-db:
+    image: mysql:5.6
+    container_name: navakij-dev-db
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: navakij_db
+      MYSQL_USER: navakij_db
+      MYSQL_PASSWORD: F8tq93pWz4BcKdX2
+    volumes:
+      - ./db_data:/var/lib/mysql
+      - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf

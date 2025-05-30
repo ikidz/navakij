@@ -1,0 +1,15 @@
+.login_alert{
+	width:400px;
+	margin: 0 auto;
+	margin-bottom:30px;
+}
+.center{
+	text-align:center;
+}
+.red{
+	color:#F00;
+}
+.green{
+	color:#216B21;
+}
+.white{ color:#FFF; }

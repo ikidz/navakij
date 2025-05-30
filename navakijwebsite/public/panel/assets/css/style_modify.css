@@ -1,0 +1,31 @@
+/*Image Sortable*/
+#sortable ul{
+	width:600px;
+	position:relative;	
+}
+#sortable li{
+	list-style:none;	
+	float:left;
+	width:130px;
+	height:114px;
+	background:#CCC;
+	display:inline-block;
+	margin:15px 12px;
+	position:relative;
+	top:8px;
+	border-radius:5px;
+}
+#sortable li a.img_thumb{
+	margin:4px 5px;
+	display:block;
+	
+	
+}
+#sortable li a img{
+	width:120px;
+	height:90px;	
+}
+#sortable li p{
+	margin:-4px 60px;
+	display:block;	
+}

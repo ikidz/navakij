@@ -1,0 +1,336 @@
+/* Responsive - Start */
+
+@media (min-width: 320px) and (max-width: 766px) {
+
+	/* Fonts - Start */
+	h1 {
+		font-size: 1.785rem;
+		line-height: 1.785rem;
+	}
+	h2 {
+		font-size: 1.75rem;
+		line-height: 1.75rem;
+	}
+	h3 {
+		font-size: 1.667rem;
+		line-height: 1.667rem;
+	}
+	h4 {
+		font-size: 1.33rem;
+		line-height: 1.33rem;
+	}
+	h5 {
+		font-size: 1rem;
+		line-height: 26px;
+	}
+	p,
+	li {
+		font-size: 1rem;
+		line-height: 26px;
+	}
+	/* Fonts - End */
+
+	/* Default stylesheet - Start */
+	.spacing{
+		height:58px;
+	}
+	.section-title{
+		padding:2rem 0;
+		margin:0;
+	}
+	#page-body{
+		padding:0 1rem;
+	}
+	/* Default stylesheet - End */
+
+	/* Footer - Start */
+	footer .icon_contact{
+		font-size:28px;
+	}
+	footer .large{
+		font-size:38px;
+		line-height:38px;
+	}
+	/* Footer - End */
+
+	/* #navigation - Start */
+	nav.navbar{
+		padding-top:0;
+		padding-bottom:0;
+		background-color:#fff;
+	}
+	nav.navbar .navbar-nav{
+		margin-left:0;
+	}
+	nav.navbar .navbar-nav li{
+		margin:0.25rem 0;
+		border-bottom:1px solid #aaa;
+	}
+	nav.navbar .navbar-nav li:last-child{
+		border:none;
+	}
+	/* #navigation - End */
+
+	/* #banner - Start */
+	section#banner{
+		background-image:url('../img/banner_mobile.png');
+		margin-top:57px;
+	}
+	section#banner #caption h1{
+		font-size:30px;
+		line-height:30px;
+	}
+	/* #banner - End */
+
+	/* #about - Start */
+	section#about .backdrop .text{
+		background-image:url('../img/banner_mobile.png');
+		background-size:cover;
+		background-attachment:unset;
+	}
+	section#about #title .icomoon{
+		font-size:8rem;
+	}
+	/* section#about #title .text .head{
+		font-size:120px;
+		line-height:120px;
+	}
+	section#about #title .text .line{
+		margin-top:15px;
+	}
+	section#about #title .text .subhead{
+		font-size:60px;
+		line-height:60px;
+	} */
+	/* #about - End */
+
+	/* #services - Start */
+	section#services{
+		padding:1rem 0;
+	}
+	/* #services - End */
+
+	/* #products - Start */
+	section#products{
+		padding:1rem 0;
+	}
+	/* #products - End */
+
+	/* #news - Start */
+	section#news{
+		padding:1rem 0;
+	}
+	/* #news - End */
+
+	/* page [Products] - Start */
+	html.products_index #newest .info{
+		padding:2rem;
+	}
+	html.products_index #filterForm .control-group.bordered{
+		border-radius:30px;
+		-webkit-border-radius:30px;
+		-moz-border-radius:30px;
+		-o-border-radius:30px;
+	}
+	html.products_index #filterForm #categories{
+		border:none;
+	}
+	html.products_index #products .product-item a,
+	html.products_search_product #products .product-item a {
+		padding: 3rem 1rem;
+	}
+	/* page [Products] - End */
+
+	/* page [Products/info] - Start */
+	html.products_info #page-banner #caption #logo{
+		width:38px;
+	}
+	/* page [Products/info] - End */
+
+	/* page [jobs/applicant] - Start */
+	html.jobs_applicant #steps ul li{
+		margin-top:0;
+		margin-left:0;
+		margin-bottom:0;
+	}
+	/* page [jobs/applicant] - End */
+
+	/* page [jobs/edit_applicant] - Start */
+	html.jobs_edit_applicant #steps ul li{
+		margin-top:0;
+		margin-left:0;
+		margin-bottom:0;
+	}
+	/* page [jobs/edit_applicant] - End */
+}
+@media (min-width: 767px) and (max-width: 991px) {
+
+	.spacing{
+		height:59px;
+	}
+
+	/* Default stylesheet - Start */
+	#page-body{
+		padding:0;
+	}
+	/* Default stylesheet - End */
+
+	/* #navigation - Start */
+	nav.navbar{
+		padding-top:0;
+		padding-bottom:0;
+		background-color:#fff;
+	}
+	nav.navbar .navbar-nav{
+		margin-left:0;
+	}
+	nav.navbar .navbar-nav li{
+		margin:0.25rem 0;
+		border-bottom:1px solid #aaa;
+	}
+	nav.navbar .navbar-nav li:last-child{
+		border:none;
+	}
+	/* #navigation - End */
+
+	/* #banner - Start */
+	section#banner{
+		margin-top:59px;
+	}
+	/* #banner - End */
+
+	/* #about - Start */
+	section#about .backdrop .text{
+		background-image:url('../img/banner_mobile.png');
+		background-size:cover;
+		background-attachment:unset;
+	}
+	section#about #title .icomoon{
+		font-size:8rem;
+	}
+	/* #about - End */
+
+	/* Footer - Start */
+	footer .icon_contact{
+		font-size:28px;
+	}
+	footer .large{
+		font-size:38px;
+		line-height:38px;
+	}
+	/* Footer - End */
+
+	/* page [Products] - Start */
+	html.products_index #products .product-item a,
+	html.products_search_product #products .product-item a {
+		padding: 3rem 1rem;
+	}
+	/* page [Products] - End */
+
+	/* page [aboutus/boardofdirectors] - Start */
+	/* .board-row .board-item .detail h5{
+		font-size:1rem;
+	}
+	.board-row .board-item .detail p{
+		font-size:0.7rem;
+	} */
+	/* page [aboutus/boardofdirectors] - End */
+
+	/* page [aboutus/directors] - Start */
+	html.aboutus_directors #page-body .member-list .member-blog p{
+		font-size:0.9rem;
+	}
+	/* page [aboutus/directors] - End */
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+	/* Default stylesheet - Start */
+	.page-title{
+		padding:12px 15px 11px 50px;
+	}
+	/* Default stylesheet - End */
+
+	section#services .service-list .service-item .service-title, section#page-body.page-services .service-title{
+		font-size:20px;
+		line-height:28px;
+	}
+
+	/* Footer - Start */
+	footer .icon_contact{
+		font-size:28px;
+	}
+	footer .large{
+		font-size:43px;
+		line-height:43px;
+	}
+	/* Footer - End */
+}
+@media (min-width: 1200px) and (max-width: 1679px) {
+	
+}
+@media (min-width: 1680px) {
+
+}
+
+	/* iPad Landscape - Start */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+
+	}
+	/* iPad Landscape - End */
+
+	/* ----------- iPad Pro 12.9" ----------- */
+
+	/* Portrait and Landscape */
+	@media (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+		
+	}
+
+	/* Portrait */
+	/* Declare the same value for min- and max-width to avoid colliding with desktops */
+	/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+	@media (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+		
+	}
+
+	/* Landscape */
+	/* Declare the same value for min- and max-width to avoid colliding with desktops */
+	/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+	@media only screen 
+	and (min-device-width: 1366px) 
+	and (max-device-width: 1366px) 
+	and (orientation: landscape) 
+	and (-webkit-min-device-pixel-ratio: 2) {
+
+	}
+
+/* Responsive - End */
+
+/* Fix text alignment - Start */
+@media (min-width: 320px) and (max-width: 766px) {
+	.text-xs-left { text-align: left; }
+	.text-xs-right { text-align: right; }
+	.text-xs-center { text-align: center; }
+	.text-xs-justify { text-align: justify; }
+}
+
+@media (min-width: 767px) {
+ 	.text-sm-left { text-align: left; }
+ 	.text-sm-right { text-align: right; }
+ 	.text-sm-center { text-align: center; }
+ 	.text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: 992px) {
+ 	.text-md-left { text-align: left; }
+ 	.text-md-right { text-align: right; }
+ 	.text-md-center { text-align: center; }
+ 	.text-md-justify { text-align: justify; }
+}
+
+@media (min-width: 1200px) {
+ 	.text-lg-left { text-align: left; }
+ 	.text-lg-right { text-align: right; }
+ 	.text-lg-center { text-align: center; }
+ 	.text-lg-justify { text-align: justify; }
+}
+/* Fix text alignment - End */

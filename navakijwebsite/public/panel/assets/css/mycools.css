@@ -1,0 +1,49 @@
+.login_alert{
+	width:400px;
+	margin: 0 auto;
+	margin-bottom:30px;
+}
+.center{
+	text-align:center;
+}
+.red{
+	color:#F00;
+}
+.green{
+	color:#216B21;
+}
+.mycools-icon-gganalytics-16{
+	background-image:url(../img/icons/analytics-16.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	width:23px;
+	height:16px;
+	display:inline-block;
+	vertical-align:middle;
+}
+.mycools-icon-gganalytics-18{
+	background-image:url(../img/icons/analytics-32.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	width:32px;
+	height:32px;
+	display:inline-block;
+	vertical-align:middle;
+}
+.center{
+	text-align:center;
+}
+
+/* By iAon */
+.text-list{
+	color:#016FA7;
+	text-shadow:none!important;
+	margin-left:15px;
+}
+.help-block{
+	font-size: 10px;
+	color: #7e7e7e;
+}
+.help-block > i.icon-question-circle{
+	cursor: help;
+}
