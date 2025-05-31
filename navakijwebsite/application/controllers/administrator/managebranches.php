@@ -58,6 +58,8 @@ class Managebranches extends CI_CONTROLLER{
 		$this->admin_model->set_column('branch_id','ลำดับ','10%','icon-list-ol');
 		$this->admin_model->set_column('branch_image','รูปภาพ','15%','icon-picture-o');
 		$this->admin_model->set_column('branch_title_th','ชื่อ','15%','icon-font');
+		$this->admin_model->set_column('card','บัตร','10%','');
+		$this->admin_model->set_column('patient_department','IPD/OPD','10%','');
 		$this->admin_model->set_column('is_partner','บริษัทในเครือ','10%','icon-star');
 		$this->admin_model->set_column('is_on_website','แสดงผลบนเว็บไซต์','10%','icon-laptop');
 		$this->admin_model->set_column('is_on_pdf','แสดงผลบน PDF','10%','icon-file-pdf-o');
@@ -97,6 +99,8 @@ class Managebranches extends CI_CONTROLLER{
         $this->form_validation->set_rules('province_id', 'จังหวัด','trim|required');
         $this->form_validation->set_rules('district_id', 'อำเภอ/เขต','trim|required');
         $this->form_validation->set_rules('subdistrict_id', 'ตำบล/แขวง','trim|required');
+		$this->form_validation->set_rules('card', 'บัตร', 'trim');
+		$this->form_validation->set_rules('patient_department', 'IPD/OPD', 'trim');
         $this->form_validation->set_rules('is_partner','อยู่ในเครือ','trim');
 		$this->form_validation->set_rules('branch_lat','Latitude','trim');
 		if( $this->input->post('branch_lat') != '' ){
@@ -148,6 +152,8 @@ class Managebranches extends CI_CONTROLLER{
         $this->form_validation->set_rules('province_id', 'จังหวัด','trim|required');
         $this->form_validation->set_rules('district_id', 'อำเภอ/เขต','trim|required');
         $this->form_validation->set_rules('subdistrict_id', 'ตำบล/แขวง','trim|required');
+		$this->form_validation->set_rules('card', 'บัตร', 'trim');
+		$this->form_validation->set_rules('patient_department', 'IPD/OPD', 'trim');
         $this->form_validation->set_rules('is_partner','อยู่ในเครือ','trim');
 		$this->form_validation->set_rules('branch_lat','Latitude','trim');
 		if( $this->input->post('branch_lat') != '' ){

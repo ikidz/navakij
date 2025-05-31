@@ -112,6 +112,8 @@ class Managebranchesmodel extends CI_Model {
         $this->db->set('province_id', $this->input->post('province_id'));
         $this->db->set('district_id', $this->input->post('district_id'));
         $this->db->set('subdistrict_id', $this->input->post('subdistrict_id'));
+        $this->db->set('card', $this->input->post('card'));
+        $this->db->set('patient_department', $this->input->post('patient_department'));
         $this->db->set('is_partner', $this->input->post('is_partner'));
         $this->db->set('branch_lat', ( $this->input->post('branch_lat') ? $this->input->post('branch_lat') : 0 ));
         $this->db->set('branch_lng', ( $this->input->post('branch_lng') ? $this->input->post('branch_lng') : 0 ));
@@ -161,6 +163,8 @@ class Managebranchesmodel extends CI_Model {
         $this->db->set('province_id', $this->input->post('province_id'));
         $this->db->set('district_id', $this->input->post('district_id'));
         $this->db->set('subdistrict_id', $this->input->post('subdistrict_id'));
+        $this->db->set('card', $this->input->post('card'));
+        $this->db->set('patient_department', $this->input->post('patient_department'));
         $this->db->set('is_partner', $this->input->post('is_partner'));
         $this->db->set('branch_lat', ( $this->input->post('branch_lat') ? $this->input->post('branch_lat') : 0 ));
         $this->db->set('branch_lng', ( $this->input->post('branch_lng') ? $this->input->post('branch_lng') : 0 ));

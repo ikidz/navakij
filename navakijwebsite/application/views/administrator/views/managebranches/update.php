@@ -118,6 +118,20 @@
                 </div>
 
 				<div class="control-group">
+					<label class="control-label" for="card">บัตร :</label>
+					<div class="controls">
+						<input type="text" name="card" id="card" value="<?php echo set_value('card', $info['card']); ?>" class="span6" />
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label" for="patient_department">IPD/OPD :</label>
+					<div class="controls">
+						<input type="text" name="patient_department" id="patient_department" value="<?php echo set_value('patient_department', $info['patient_department']); ?>" class="span6" />
+					</div>
+				</div>
+
+				<div class="control-group">
                     <label class="control-label" for="is_partner">เป็นพันธมิตรในเครือ : </label>
                     <div class="controls">
                         <input type="checkbox" name="is_partner" id="is_partner" value="1" <?php echo set_checkbox('is_partner', 1, $info['is_partner'] == 1); ?> />
