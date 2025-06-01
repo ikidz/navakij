@@ -165,6 +165,8 @@ class ImportBranchJob implements ShouldQueue
                         "province_id" => $province_id,
                         "district_id" => $district_id,
                         "subdistrict_id" => $subdistrict_id,
+                        "card" => $row['บัตร'],
+                        "patient_department" => $row['IPD/OPD'],
                         "brands" => strtolower( $row['แบรนด์'] ) ?? null,
                         "branch_order" => $branch_order,
                         "is_on_website" => intval( $row["แสดงผลบนเว็บไซต์"] ),
