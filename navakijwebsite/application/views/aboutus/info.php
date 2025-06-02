@@ -38,7 +38,9 @@
                             </div>
                         <?php else: ?>
                             <div class="images col-12 px-0 px-md-3">
-                                <img src="<?php echo base_url('public/core/uploaded/article/'.$info['article_image_'.$this->_language]); ?>" alt="" class="img-fullwidth" />
+                                <a href="<?php echo base_url('public/core/uploaded/article/'.$info['article_image_'.$this->_language]); ?>" data-fancybox>
+                                    <img src="<?php echo base_url('public/core/uploaded/article/'.$info['article_image_'.$this->_language]); ?>" alt="" class="img-fullwidth" />
+                                </a>
                             </div>
                         <?php endif; ?>
                     <?php endif; ?>
