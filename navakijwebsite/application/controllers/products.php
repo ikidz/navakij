@@ -109,11 +109,11 @@ class products extends CI_Controller {
         
 
         $this->form_validation->set_rules('agreement','กดยอมรับนโยบายความเป็นส่วนตัวแล้ว','trim|required');
-        $this->form_validation->set_rules('contact_gender',' เพศ','trim|required');
+        // $this->form_validation->set_rules('contact_gender',' เพศ','trim|required');
         $this->form_validation->set_rules('contact_fname', 'ชื่อจริง','trim|required');
         $this->form_validation->set_rules('contact_lname', 'นามสกุล','trim|required');
         $this->form_validation->set_rules('contact_tel', 'เบอร์โทรศัพท์','trim|required');
-        $this->form_validation->set_rules('contact_email','อีเมล','trim|required');
+        // $this->form_validation->set_rules('contact_email','อีเมล','trim|required');
         $this->form_validation->set_rules('province_id','จังหวัด','trim|required');
         $this->form_validation->set_rules('agreement','การยินยอมตามนโยบายความเป็นส่วนตัว','trim|required');
         $this->form_validation->set_rules('g-recaptcha-response','Captcha','trim|required|callback_validateReCaptcha');

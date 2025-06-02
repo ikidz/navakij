@@ -64,7 +64,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo vendors_url('bootstrap-datepicker/css/datepicker.css'); ?>" />
 <link rel="stylesheet" type="text/css" href="<?php echo assets_url('css/animate.css'); ?>" />
 <link rel="stylesheet" type="text/css" href="<?php echo assets_url('css/stylesheet.css'); ?>" />
-<link rel="stylesheet" type="text/css" href="<?php echo assets_url('css/style.css?v=1.8'); ?>" />
+<link rel="stylesheet" type="text/css" href="<?php echo assets_url('css/style.css?v=1.9'); ?>" />
 <link rel="stylesheet" type="text/css" href="<?php echo assets_url('css/responsive.css?v=1.8'); ?>" />
 <?php /* Stylesheets - End */ ?>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>

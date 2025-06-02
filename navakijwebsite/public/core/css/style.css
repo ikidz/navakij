@@ -247,6 +247,9 @@ li {
 .black {
   color: #000;
 }
+.blue{
+  color: #005FC4;
+}
 .navy {
   color: #223d66;
 }
@@ -276,6 +279,9 @@ li {
 }
 .bg-white {
   background-color: #fff;
+}
+.bg-blue{
+  background-color: #005FC4;
 }
 .bg-navy {
   background-color: #223d66;
@@ -449,6 +455,11 @@ li {
   background-color: #000;
   color: #fff;
 }
+.btn-blue{
+  border-color: #005FC4;
+  background-color: #005FC4;
+  color: #fff;
+}
 .btn-navy {
   border-color: #223d66;
   background-color: #223d66;
@@ -510,6 +521,11 @@ li {
 .btn-black:hover {
   background-color: #fff;
   color: #000;
+}
+.btn-blue:hover{
+  border-color: #fff;
+  background-color: #fff;
+  color: #005FC4;
 }
 .btn-navy:hover {
   background-color: transparent;
@@ -1964,6 +1980,10 @@ html.products_info #product-sidebar a[aria-expanded="true"] .fa-chevron-down {
 }
 html.products_info #product-sidebar a[aria-expanded="false"] .fa-chevron-up {
   display: none;
+}
+html.products_info #product-sidebar #contactForm #contact .form-actions #btn-submit.btn-navy:hover {
+  border-color:#fff;
+  background-color:#fff;
 }
 html.products_info #contact .control-label {
   font-size: 12px;

@@ -116,9 +116,9 @@
             
             <?php if( $product_info['insurance_contact_form'] == 1 ): ?>
                 <?php /* #product-sidebar - Start */ ?>
-                <div id="product-sidebar" class="col-12 col-md-4">
+                <div id="product-sidebar" class="col-12 col-md-4 py-3">
                     <h4>
-                        <a href="#contactForm" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="contactForm" class="d-flex flex-wrap align-items-center border-radius bg-navy white p-3">
+                        <a href="#contactForm" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="contactForm" class="d-flex flex-wrap align-items-center border-radius bg-blue white p-3">
                             <strong class="white"><?php echo ( $this->_language == 'th' ? 'ข้อมูลสำหรับติดต่อกลับ' : 'Contact form' ); ?></strong>
                             <span class="ml-auto text-right">
                                 <i class="fas fa-chevron-down white"></i>
@@ -126,7 +126,7 @@
                             </span>
                         </a>
                     </h4>
-                    <div id="contactForm" class="collapse multi-collapse bg-lightblue p-3 show">
+                    <div id="contactForm" class="collapse multi-collapse p-3 mt-3 show bg-blue border-radius">
                     <?php $message = $this->session->flashdata('message');
                                 
                                 if(@$message!=NULL){ ?>
@@ -135,8 +135,9 @@
                         <?php } ?>
 
                         <form id="contact" name="contact" method="post" enctype="multipart/form-data" action="" class="form mb-3">
-                        <input type="hidden" name="insurance_id" id="insurance_id" value="<?php echo $product_info['insurance_id'];?>">
+                            <input type="hidden" name="insurance_id" id="insurance_id" value="<?php echo $product_info['insurance_id'];?>">
                             
+                            <?php /*
                             <div class="control-group d-flex flex-wrap bg-white">
                                 <label class="control-label col-4"><?php echo ( $this->_language == 'th' ? 'เพศ' : 'Sex' ); ?></label>
                                 <div class="controls col-8 px-1 my-0 d-flex flex-wrap align-items-center justify-content-end">
@@ -151,6 +152,7 @@
                                 </div>
                             </div>
                             <?php echo form_error('contact_gender'); ?>
+                            */ ?>
                             <div class="control-group d-flex flex-wrap bg-white">
                                 <label class="control-label col-4" for="contact_fname"><?php echo ( $this->_language == 'th' ? 'ชื่อจริง' : 'Firstname' ); ?></label>
                                 <div class="controls col-8 px-1 my-0">
@@ -172,6 +174,7 @@
                                 </div>
                             </div>
                             <?php echo form_error('contact_tel'); ?>
+                            <?php /*
                             <div class="control-group d-flex flex-wrap bg-white">
                                 <label class="control-label col-4" for="contact_email"><?php echo ( $this->_language == 'th' ? 'อีเมล' : 'Email' ); ?></label>
                                 <div class="controls col-8 px-1 my-0">
@@ -179,6 +182,7 @@
                                 </div>
                             </div>
                             <?php echo form_error('contact_email'); ?>
+                            */ ?>
                             <div class="control-group d-flex flex-wrap bg-white">
                                 <label class="control-label col-4" for="province_id"><?php echo ( $this->_language == 'th' ? 'จังหวัด' : 'City' ); ?></label>
                                 <div class="controls col-8 px-1 my-0">
@@ -193,12 +197,12 @@
                             <?php echo form_error('province_id'); ?>
                             <div class="control-group d-flex flex-wrap">
                                 <div class="controls">
-                                    <div class="mk-trc my-2" data-style="radio" data-radius="true" data-text="true" data-color="blue-grey">
+                                    <div class="mk-trc my-2" data-style="radio" data-radius="true" data-text="true" data-color="white">
                                         <input type="radio" name="agreement" id="agreement" value="1" <?php echo set_radio('agreement', 1); ?>>
                                         <label for="agreement">
                                             <i class="fas" data-before-check="" data-after-check="&#xf00c;"></i>
                                             <?php if( $this->_language == 'th' ): ?>
-                                                <span class="small">
+                                                <span class="small white">
                                                     ข้าพเจ้าตกลงยินยอมให้เก็บรวบรวมและใช้ข้อมูลส่วน
                                                     บุคคลข้างต้นของข้าพเจ้า เพื่อติดต่อข้าพเจ้าในการ
                                                     นำเสนอผลิตภัณฑ์และบริการที่ข้าพเจ้าสนใจหรือที่บริษัทฯ 
@@ -206,10 +210,10 @@
                                                     การทำเครื่องหมาย <span class="far fa-check-circle"></span> ในช่อง เป็นการแสดง
                                                     เจตนายินยอมของข้าพเจ้าแทนการลงลายมือชื่อเป็น
                                                     หลักฐาน ทั้งนี้ ก่อนการแสดงเจตนาดังกล่าวข้างต้น 
-                                                    ข้าพเจ้าได้อ่านและรับทราบเกี่ยวกับ <a href="javascript:void(0);" class="btn-text navy underline">นโยบายความเป็นส่วนตัวแล้ว</a>
+                                                    ข้าพเจ้าได้อ่านและรับทราบเกี่ยวกับ <a href="javascript:void(0);" class="btn-text white underline">นโยบายความเป็นส่วนตัวแล้ว</a>
                                                 </span>
                                             <?php else: ?>
-                                                <span class="small">
+                                                <span class="small white">
                                                     I, hereby, give consent for my personal data in the form above to be collected and processed by the company in order to offer products and services which either I am interested in purchasing or the company would like to offers those that are beneficial to me as a customer. By means of marking <span class="far fa-check-circle"></span> in the circle, it represents my signature for the confirmation of my permission for processing my personal data. Acknowledgedly, I have read and understood the privacy policy.
                                                 </span>
                                             <?php endif; ?>
@@ -218,7 +222,7 @@
                                 </div>
                             </div>
                             <?php echo form_error('agreement'); ?>
-                            <div class="control-group d-flex flex-wrap bg-white">
+                            <div class="control-group d-flex flex-wrap">
                                 <div class="controls col-8 px-1 my-0">
                                     <div class="g-recaptcha" data-sitekey="<?php echo RECAPTCHA_KEY;?>"></div>
                                 </div>

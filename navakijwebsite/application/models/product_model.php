@@ -158,11 +158,11 @@ class Product_model extends CI_Model {
         $this->db->set('insurance_id', $this->input->post('insurance_id'));
         $this->db->set('province_id', $this->input->post('province_id'));
         $this->db->set('insurance_contact_consent', 'yes');
-        $this->db->set('insurance_contact_gender', $this->input->post('contact_gender'));
+        // $this->db->set('insurance_contact_gender', $this->input->post('contact_gender'));
         $this->db->set('insurance_contact_name', $this->input->post('contact_fname'));
         $this->db->set('insurance_contact_lastname', $this->input->post('contact_lname'));
         $this->db->set('insurance_contact_mobile', $this->input->post('contact_tel'));
-        $this->db->set('insurance_contact_email', $this->input->post('contact_email'));
+        // $this->db->set('insurance_contact_email', $this->input->post('contact_email'));
         $this->db->set('insurance_contact_status', 'approved');
         $this->db->set('insurance_contact_createdtime', date("Y-m-d H:i:s"));
         $this->db->set('insurance_contact_createdip', $this->input->ip_address());
