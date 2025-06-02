@@ -35,6 +35,36 @@ class Contact_model extends CI_Model {
 
         return $message;
     }
+
+    public function get_branches(){
+
+        $regions = $this->db->order_by('region_order', 'ASC')
+                            ->get('system_region')
+                            ->result_array();
+
+        if( isset( $regions ) && count( $regions ) > 0 ){
+            foreach( $regions as $key => $region ){
+                $branches = $this->get_branch_offices_by_region( $region['region_id'] );
+                if( isset( $branches ) && count( $branches ) > 0 ){
+                    $regions[$key]['branch_offices'] = $branches;
+                }else{
+                    unset( $regions[$key] );
+                }
+            }
+            return $regions;
+        }
+
+    }
+
+    private function get_branch_offices_by_region( $region_id=0 ){
+
+        $query = $this->db->where('region_id', $region_id)
+                            ->where('status', 'approved')
+                            ->order_by('order','asc')
+                            ->get('branch_offices')
+                            ->result_array();
+        return $query;
+    }
 	
 
 }

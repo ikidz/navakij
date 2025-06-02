@@ -41,6 +41,8 @@ class Contact extends CI_Controller {
         $this->form_validation->set_error_delimiters('<div class="message error">','</div>');
 
         if($this->form_validation->run()===FALSE){
+
+            $this->_data['branches'] = $this->contact_model->get_branches();
             
             $this->load->view('included/header',$this->_data);
             $this->load->view('included/navigation');

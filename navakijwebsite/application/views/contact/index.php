@@ -170,146 +170,31 @@
               <h4 class="navy">สำนักงานสาขา</h4>
               <h4 class="navy">บริการครอบคลุมทั่วประเทศ ทั้งในเขตปริมณฑลและภูมิภาค</h4>
             </div>
-
-            <div class="location-item col-12 col-lg-4">
-              <h5 class="navy p-3">ภาคกลาง</h5>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขารังสิต | Tel. 0 2958 0750-5</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/jpg/map-%E0%B8%A3%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B4%E0%B8%95-01-25601201105234.jpg" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/rnhArL" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขานครปฐม | Tel. (034) 270-060, 2, 3</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map-%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%9B%E0%B8%90%E0%B8%A1-25600607165120.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/JXBOEY" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขาปราณบุรี | Tel. (032) 623-621-3</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map-%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5-25600608084926.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/y9XIoy" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-            </div>
-
-            <div class="location-item col-12 col-lg-4">
-              <h5 class="navy p-3">ภาคเหนือ</h5>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขาเชียงใหม่ | Tel. (053) 278-254-5 (053) 278-861</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map_%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88-20160928113657.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/cRs9K9" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขาพิจิตร | Tel. (056) 616-561-2, (056) 616-563 </p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map-%E0%B8%9E%E0%B8%B4%E0%B8%88%E0%B8%B4%E0%B8%95%E0%B8%A3-25600608092443.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/5c9Omn" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขาพิษณุโลก | Tel. (055) 320-621-4</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map-%E0%B8%9E%E0%B8%B4%E0%B8%A9%E0%B8%93%E0%B8%B8%E0%B9%82%E0%B8%A5%E0%B8%81-20160928113723.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/rB3XkX" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขานครสวรรค์ | Tel. (056) 228-658-60</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map_%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%AA%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B9%8C-20160928113706.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/IEmymx" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขาเพชรบูรณ์ | Tel. (056) 725-602, (056) 725-603</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map-%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%93%E0%B9%8C-25600608092945.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/PHGPLv" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขาย่อยเชียงราย | Tel. (053) 750-130-2 </p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map-%E0%B8%A2%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2-25600608093210.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/cwpgmA" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-            </div>
-
-            <div class="location-item col-12 col-lg-4">
-              <h5 class="navy p-3">ภาคตะวันออกเฉียงเหนือ</h5>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขาขอนแก่น | Tel. (043) 225-266 - 8, (043) 223-724</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map_%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99-25600608105629.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/s2j5s9" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขานครราชสีมา | Tel. (044) 258-515, (044) 255-519, (044) 253-513, (044) 252-287</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map_%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B8%B2-25600608105805.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/bklJfM" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขาอุบลราชธานี | Tel. (045) 264-201-4 </p>
-                <a href="https://www.navakij.co.th/th/stfile/ubon-map" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href=" https://goo.gl/maps/a4hgN4x7Rf6GbYex8" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขามุกดาหาร | Tel. (042) 612-843-4, (042) 612-845</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map_%E0%B8%A1%E0%B8%B8%E0%B8%81%E0%B8%94%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3-25600926153152.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/1rY96S" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขาอุดรธานี | Tel. (042) 326-280-1, (042) 240-584</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map_%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A3-25600608094724.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/6PgYgm" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขาร้อยเอ็ด | Tel. (043) 519-187, (043) 519-188</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map_%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%94-25600608110310.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/2eIwkk" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-            </div>
-
-            <div class="location-item col-12 col-lg-4">
-              <h5 class="navy p-3">ภาคใต้</h5>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขาหาดใหญ่ | Tel. (074) 230-640-1, (074) 343-063, (074) 220-771</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map_หาดใหญ่-20160928115033.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/QVh2RR" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขานครศรีธรรมราช | Tel. (075) 322-030-2</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map_นครศรีธรรมราช-20160928114956.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/PTKUt1" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขาสุราษฎร์ธานี | Tel. (077) 289-083-4, (077) 289-119</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map_สุราษฎร์ธานี-20160928115023.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/flTAuH" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขาภูเก็ต | Tel. (076) 239671-3 </p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map_ภูเก็ต-20160928115003.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/TZLxOM" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขากระบี่ | Tel. (075) 624-007-8, (075) 624-009 </p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map_กระบี่-25610604113947.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/6xwGY3" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขาย่อยชุมพร | Tel. (077) 658-592-3, (077) 658-884</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map_ย่อยชุมพร-20160928115016.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/Zsi5Bi" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-            </div>
-
-            <div class="location-item col-12 col-lg-4">
-              <h5 class="navy p-3">ภาคตะวันออก</h5>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขาพัทยา | Tel. (038) 196-901-4</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map-พัทยา-25600608090307.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/z99B6m" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขาย่อยจันทบุรี | Tel. (039) 327696-7</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map_ย่อยจันทบุรี-20160928115648.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/1oGX4w" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-              <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
-                <p class="col-10">สาขาย่อยระยอง | Tel. (038) 617-802-3</p>
-                <a href="https://www.navakij.co.th/irfile/FilesUpload/pdf/map_ย่อยระยอง-20160928115704.pdf" target="_blank" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
-                <a href="https://goo.gl/KFOOE6" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
-            </div>
+            
+            <?php if (isset($branches) && count($branches) > 0): ?>
+              <?php foreach ($branches as $region): ?>
+                <div class="location-item col-12 col-lg-4 py-3">
+                  <h5 class="navy p-3"><?php echo $region['region_'.$this->_language]; ?></h5>
+                  <?php if (isset($region['branch_offices']) && count($region['branch_offices']) > 0): ?>
+                    <?php foreach ($region['branch_offices'] as $branch): ?>
+                      <div class="border-bottom border-lightgrey d-flex flex-wrap mb-1 py-2">
+                        <p class="col-10"><?php echo $branch['name_'.$this->_language]; ?> | <?php echo ($this->_language == 'th' ? 'โทร.' : 'Tel.' ); ?> <?php echo $branch['tel']; ?></p>
+                        <?php if (!empty($branch['map_img'])): ?>
+                          <a href="<?php echo base_url('public/core/uploaded/branchoffices/'.$branch['map_img']); ?>" target="_blank" class="btn-text navy mx-1"><i class="fas fa-file-image"></i></a>
+                        <?php endif; ?>
+                        <?php if( !empty($branch['map_google']) ): ?>
+                          <a href="<?php echo $branch['map_google']; ?>" target="_blank" class="btn-text navy"><i class="fas fa-map-marker-alt"></i></a>
+                        <?php endif; ?>
+                      </div>
+                    <?php endforeach; ?>
+                  <?php else: ?>
+                    <p class="col-12">ไม่มีข้อมูลสาขาในภูมิภาคนี้</p>
+                  <?php endif; ?>
+                </div>
+              <?php endforeach; ?>
+            <?php else: ?>
+              <p class="col-12">ไม่มีข้อมูลสาขา</p>
+            <?php endif; ?>
           </div>
 
       </div>
