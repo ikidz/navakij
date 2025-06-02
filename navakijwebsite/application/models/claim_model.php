@@ -110,7 +110,7 @@ class Claim_model extends CI_Model {
         if( isset( $provinces ) && count( $provinces ) > 0 ){
             foreach( $provinces as $province ){
                 
-                $queries = $this->db->select('branches.branch_title_th, branches.branch_title_en, branches.branch_address, branches.branch_tel, amphoe.name, amphoe.name_alt')
+                $queries = $this->db->select('branches.branch_title_th, branches.branch_title_en, branches.branch_address, branches.branch_tel, amphoe.name, amphoe.name_alt, branches.card, branches.patient_department')
                                     ->where('branches.branch_status','approved')
                                     ->where('branches.category_id', $categoryid)
                                     ->where('branches.province_id', $province['province_id'])

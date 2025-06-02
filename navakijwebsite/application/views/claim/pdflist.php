@@ -37,47 +37,100 @@
         <h5 class="white mx-auto mr-lg-0">The Navakij Insurance Public Company Limited</h5>
     </div>
     <div class="table-responsive p-3">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th class="bg-lightgrey">
-                        <p class="bold text-center">ชื่อ<?php echo $category['category_title_'.$this->_language]; ?></p>
-                    </th>
-                    <th class="bg-lightgrey">
-                        <p class="bold text-center">ที่อยู่</p>
-                    </th>
-                    <th class="bg-lightgrey">
-                        <p class="bold text-center">เขต/อำเภอ</p>
-                    </th>
-                    <th class="bg-lightgrey">
-                        <p class="bold text-center">เบอร์โทรศัพท์</p>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php if( isset( $branches ) && count( $branches ) > 0 ): ?>
-                    <?php foreach( $branches as $branch ): ?>
-                        <tr>
-                            <td colspan="4" class="p-0">
-                                <p class="white py-2 px-3 bg-navy"><?php echo $branch['province_name']; ?></p>
-                            </td>
-                        </tr>
-                        <?php if( isset( $branch['branches'] ) && count( $branch['branches'] ) > 0 ): ?>
-                            <?php foreach( $branch['branches'] as $list ): ?>
-                                <tr>
-                                    <td><p><?php echo $list['branch_title_'.$this->_language]; ?></p></td>
-                                    <td><p><?php echo $list['branch_address']; ?></p></td>
-                                    <td><p class="text-center"><?php echo ( $this->_language == 'th' ? $list['name'] : $list['name_alt'] ); ?></p></td>
-                                    <td><p class="text-center"><?php echo $list['branch_tel']; ?></p></td>
-                                </tr>
-                            <?php endforeach; ?>
-                        <?php endif; ?>
-                    <?php endforeach; ?>
-                <?php else: ?>
-                    <tr><td colspan="4"><p class="text-center">-- ไม่มีข้อมูล --</p></td></tr>
-                <?php endif; ?>
-            </tbody>
-        </table>
+
+        <?php if( $category['category_id'] == 4 || $category['category_id'] == 6 ): ?>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="bg-lightgrey">
+                            <p class="bold text-center">ชื่อ<?php echo $category['category_title_'.$this->_language]; ?></p>
+                        </th>
+                        <th class="bg-lightgrey">
+                            <p class="bold text-center">ที่อยู่</p>
+                        </th>
+                        <th class="bg-lightgrey">
+                            <p class="bold text-center">เขต/อำเภอ</p>
+                        </th>
+                        <th class="bg-lightgrey">
+                            <p class="bold text-center">บัตร</p>
+                        </th>
+                        <th class="bg-lightgrey">
+                            <p class="bold text-center">IPD/OPD</p>
+                        </th>
+                        <th class="bg-lightgrey">
+                            <p class="bold text-center">เบอร์โทรศัพท์</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php if( isset( $branches ) && count( $branches ) > 0 ): ?>
+                        <?php foreach( $branches as $branch ): ?>
+                            <tr>
+                                <td colspan="6" class="p-0">
+                                    <p class="white py-2 px-3 bg-navy"><?php echo $branch['province_name']; ?></p>
+                                </td>
+                            </tr>
+                            <?php if( isset( $branch['branches'] ) && count( $branch['branches'] ) > 0 ): ?>
+                                <?php foreach( $branch['branches'] as $list ): ?>
+                                    <tr>
+                                        <td><p><?php echo $list['branch_title_'.$this->_language]; ?></p></td>
+                                        <td><p><?php echo $list['branch_address']; ?></p></td>
+                                        <td><p class="text-center"><?php echo ( $this->_language == 'th' ? $list['name'] : $list['name_alt'] ); ?></p></td>
+                                        <td><p class="text-center"><?php echo $list['card']; ?></p></td>
+                                        <td><p class="text-center"><?php echo $list['patient_department']; ?></p></td>
+                                        <td><p class="text-center"><?php echo $list['branch_tel']; ?></p></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <tr><td colspan="4"><p class="text-center">-- ไม่มีข้อมูล --</p></td></tr>
+                    <?php endif; ?>
+                </tbody>
+            </table>
+        <?php else: ?>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="bg-lightgrey">
+                            <p class="bold text-center">ชื่อ<?php echo $category['category_title_'.$this->_language]; ?></p>
+                        </th>
+                        <th class="bg-lightgrey">
+                            <p class="bold text-center">ที่อยู่</p>
+                        </th>
+                        <th class="bg-lightgrey">
+                            <p class="bold text-center">เขต/อำเภอ</p>
+                        </th>
+                        <th class="bg-lightgrey">
+                            <p class="bold text-center">เบอร์โทรศัพท์</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php if( isset( $branches ) && count( $branches ) > 0 ): ?>
+                        <?php foreach( $branches as $branch ): ?>
+                            <tr>
+                                <td colspan="4" class="p-0">
+                                    <p class="white py-2 px-3 bg-navy"><?php echo $branch['province_name']; ?></p>
+                                </td>
+                            </tr>
+                            <?php if( isset( $branch['branches'] ) && count( $branch['branches'] ) > 0 ): ?>
+                                <?php foreach( $branch['branches'] as $list ): ?>
+                                    <tr>
+                                        <td><p><?php echo $list['branch_title_'.$this->_language]; ?></p></td>
+                                        <td><p><?php echo $list['branch_address']; ?></p></td>
+                                        <td><p class="text-center"><?php echo ( $this->_language == 'th' ? $list['name'] : $list['name_alt'] ); ?></p></td>
+                                        <td><p class="text-center"><?php echo $list['branch_tel']; ?></p></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <tr><td colspan="4"><p class="text-center">-- ไม่มีข้อมูล --</p></td></tr>
+                    <?php endif; ?>
+                </tbody>
+            </table>
+        <?php endif; ?>
     </div>
 
 </div>
