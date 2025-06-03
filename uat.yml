@@ -51,6 +51,7 @@ services:
       MYSQL_PASSWORD: F8tq93pWz4BcKdX2
     volumes:
       - ./db_data:/var/lib/mysql
+      - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
     networks:
       - navakij_ua_internal
 
