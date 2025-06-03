@@ -19,6 +19,6 @@ if [ -f /var/www/html/artisan ]; then
     php artisan view:cache
 fi
 
-# Start PHP-FPM
+# Start PHP-FPM with default config
 echo "🚀 Starting PHP-FPM..."
-php-fpm
+php-fpm --nodaemonize --fpm-config /usr/local/etc/php-fpm.conf
