@@ -2,26 +2,33 @@ version: "3.8"
 
 services:
   navakij-ua-app:
+    container_name: navakij-ua-app
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: navakij-ua-app
+    entrypoint: ["/start.sh"]
     volumes:
-      - ./navakijwebsite:/var/www/html
-    working_dir: /var/www/html
+      - ./laravel:/var/www/html
     depends_on:
       - navakij-ua-db
+    environment:
+      - DB_CONNECTION=mysql
+      - DB_HOST=navakij-ua-db
+      - DB_PORT=3306
+      - DB_DATABASE=navakij_ua_db
+      - DB_USERNAME=navakij_ua_db
+      - DB_PASSWORD=F8tq93pWz4BcKdX2
     expose:
-      - "9000"
+      - "9000"  # PHP-FPM port for Nginx to connect to
     networks:
       - nginx_proxy
-      - navakij_internal
+      - navakij_ua_internal
 
   navakij-ua-nginx:
     image: nginx:latest
     container_name: navakij-ua-nginx
     volumes:
-      - ./navakijwebsite:/var/www/html
+      - ./laravel:/var/www/html
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
     depends_on:
       - navakij-ua-app
@@ -29,29 +36,32 @@ services:
       - "80"
     networks:
       - nginx_proxy
-      - navakij_internal
+      - navakij_ua_internal
 
   navakij-ua-db:
-    image: mysql:5.6
     container_name: navakij-ua-db
+    image: mysql:5.6
+    restart: always
+    ports:
+      - "3312:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: navakij_db
-      MYSQL_USER: navakij_db
+      MYSQL_ROOT_PASSWORD: 37f34cdb37402992e3bd05656ea293cb81ca388ae09c543bb87e25b16465dd35
+      MYSQL_DATABASE: navakij_ua_db
+      MYSQL_USER: navakij_ua_db
       MYSQL_PASSWORD: F8tq93pWz4BcKdX2
     volumes:
-      - navakij_uat_db_data:/var/lib/mysql
-      - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
-    ports:
-      - "3307:3306"  # Optional: expose for manual access
+      - navakij_ua_db_data:/var/lib/mysql
     networks:
-      - navakij_internal
+      - navakij_ua_internal
 
 volumes:
-  navakij_uat_db_data:
+  navakij_ua_db_data:
+    external: true
+    name: navakij_ua_db_data
 
 networks:
   nginx_proxy:
     external: true
-  navakij_internal:
+  navakij_ua_internal:
+    name: navakij_ua_internal
     driver: bridge
