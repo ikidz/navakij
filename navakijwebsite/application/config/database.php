@@ -68,21 +68,21 @@ $db['development']['swap_pre'] = '';
 $db['development']['autoinit'] = TRUE;
 $db['development']['stricton'] = FALSE;
 
-//production database
-$db['production']['hostname'] = 'localhost';
-$db['production']['username'] = 'root';
-$db['production']['password'] = '05032530';
-$db['production']['database'] = 'cimaster_v3';
-$db['production']['dbdriver'] = 'mysql';
-$db['production']['dbprefix'] = '';
-$db['production']['pconnect'] = TRUE;
-$db['production']['db_debug'] = TRUE;
-$db['production']['cache_on'] = FALSE;
-$db['production']['cachedir'] = './application/cache/';
-$db['production']['char_set'] = 'utf8';
-$db['production']['dbcollat'] = 'utf8_general_ci';
-$db['production']['swap_pre'] = '';
-$db['production']['autoinit'] = TRUE;
-$db['production']['stricton'] = FALSE;
+//uat database
+$db['uat']['hostname'] = 'navakij-ua-db';
+$db['uat']['username'] = 'navakij_ua_db';
+$db['uat']['password'] = 'F8tq93pWz4BcKdX2';
+$db['uat']['database'] = 'navakij_ua_db';
+$db['uat']['dbdriver'] = 'mysqli';
+$db['uat']['dbprefix'] = '';
+$db['uat']['pconnect'] = TRUE;
+$db['uat']['db_debug'] = TRUE;
+$db['uat']['cache_on'] = FALSE;
+$db['uat']['cachedir'] = './application/cache/';
+$db['uat']['char_set'] = 'utf8';
+$db['uat']['dbcollat'] = 'utf8_general_ci';
+$db['uat']['swap_pre'] = '';
+$db['uat']['autoinit'] = TRUE;
+$db['uat']['stricton'] = FALSE;
 /* End of file database.php */
 /* Location: ./application/config/database.php */
