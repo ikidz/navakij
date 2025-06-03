@@ -13,8 +13,8 @@
 | path to your installation.
 |
 */
-$config['base_url'] = (isset($_SERVER['HTTPS']) ? "https://" : "http://").$_SERVER['HTTP_HOST'].str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
-//$config['base_url'] = 'https://www.navakij.co.th/';
+//$config['base_url'] = (isset($_SERVER['HTTPS']) ? "https://" : "http://").$_SERVER['HTTP_HOST'].str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
+$config['base_url'] = 'https://navakij-uat.tedintelligence.com/';
 /*
 |--------------------------------------------------------------------------
 | Index File
