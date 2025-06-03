@@ -21,7 +21,7 @@
  */
  	$ENVIRONMENT = (@$_SERVER['SERVER_ADDR']=="127.0.0.1" || @$_SERVER['SERVER_ADDR']=="localhost" || @$_SERVER['SERVER_ADDR']=="::1" || !isset($_SERVER['SERVER_ADDR']))?'development':'production';
  	//Set for Testing Mode
- 	$ENVIRONMENT="uat";
+ 	$ENVIRONMENT="testing";
 	define('ENVIRONMENT', $ENVIRONMENT);
 /*
  *---------------------------------------------------------------

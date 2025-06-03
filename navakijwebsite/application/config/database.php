@@ -69,20 +69,20 @@ $db['development']['autoinit'] = TRUE;
 $db['development']['stricton'] = FALSE;
 
 //uat database
-$db['uat']['hostname'] = 'navakij-ua-db';
-$db['uat']['username'] = 'navakij_ua_db';
-$db['uat']['password'] = 'F8tq93pWz4BcKdX2';
-$db['uat']['database'] = 'navakij_ua_db';
-$db['uat']['dbdriver'] = 'mysqli';
-$db['uat']['dbprefix'] = '';
-$db['uat']['pconnect'] = TRUE;
-$db['uat']['db_debug'] = TRUE;
-$db['uat']['cache_on'] = FALSE;
-$db['uat']['cachedir'] = './application/cache/';
-$db['uat']['char_set'] = 'utf8';
-$db['uat']['dbcollat'] = 'utf8_general_ci';
-$db['uat']['swap_pre'] = '';
-$db['uat']['autoinit'] = TRUE;
-$db['uat']['stricton'] = FALSE;
+$db['testing']['hostname'] = 'navakij-ua-db';
+$db['testing']['username'] = 'navakij_ua_db';
+$db['testing']['password'] = 'F8tq93pWz4BcKdX2';
+$db['testing']['database'] = 'navakij_ua_db';
+$db['testing']['dbdriver'] = 'mysqli';
+$db['testing']['dbprefix'] = '';
+$db['testing']['pconnect'] = TRUE;
+$db['testing']['db_debug'] = TRUE;
+$db['testing']['cache_on'] = FALSE;
+$db['testing']['cachedir'] = './application/cache/';
+$db['testing']['char_set'] = 'utf8';
+$db['testing']['dbcollat'] = 'utf8_general_ci';
+$db['testing']['swap_pre'] = '';
+$db['testing']['autoinit'] = TRUE;
+$db['testing']['stricton'] = FALSE;
 /* End of file database.php */
 /* Location: ./application/config/database.php */
