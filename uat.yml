@@ -50,14 +50,9 @@ services:
       MYSQL_USER: navakij_ua_db
       MYSQL_PASSWORD: F8tq93pWz4BcKdX2
     volumes:
-      - navakij_ua_db_data:/var/lib/mysql
+      - ./db_data:/var/lib/mysql
     networks:
       - navakij_ua_internal
-
-volumes:
-  navakij_ua_db_data:
-    external: true
-    name: navakij_ua_db_data
 
 networks:
   nginx_proxy:
