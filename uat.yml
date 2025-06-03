@@ -8,7 +8,7 @@ services:
       dockerfile: Dockerfile
     entrypoint: ["/start.sh"]
     volumes:
-      - ./laravel:/var/www/html
+      - ./navakijwebsite:/var/www/html
     depends_on:
       - navakij-ua-db
     environment:
