@@ -24,10 +24,17 @@ class Policy_model extends CI_Model {
     }
 
     public function get_sidebar_byurl( $meta_url = '' ){
-        $sidebarLists = array(
-            'article' => array(),
-            'document' => array()
-        );
+        if( $meta_url == 'economic-and-governance-aspects' ){
+            $sidebarLists = array(
+                'document' => array(),
+                'article' => array()
+            );
+        }else{
+            $sidebarLists = array(
+                'article' => array(),
+                'document' => array()
+            );
+        }
         $articleCategories = $this->db->where('category_meta_url', $meta_url)
                         ->where('category_status', 'approved')
                         ->get('categories')

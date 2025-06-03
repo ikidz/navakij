@@ -11,7 +11,7 @@
                 <div id="breadcrumb" class="breadcrumb col-12 px-0 px-md-3 mb-3">
                     <p>
                         <a href="<?php echo site_url('home'); ?>" class="btn-text black">หน้าหลัก</a>
-                        <a href="<?php echo site_url('company-policy/'.$category['category_meta_url']); ?>" class="btn-text black"><?php echo $category['category_title_'.$this->_language]; ?></a>
+                        <a href="<?php echo site_url('company-policy'); ?>" class="btn-text black"><?php echo $category['category_title_'.$this->_language]; ?></a>
                         <a href="<?php echo site_url('company-policy/'.$contents['article']['category']['category_meta_url']); ?>" class="btn-text black"><?php echo $contents['article']['category']['category_title_'.$this->_language]; ?></a>
                         <a href="<?php echo site_url('company-policy/'.$contents['article']['category']['category_meta_url'].'/'.$display['contentType'].'/'.$display['contentId']); ?>" class="btn-text navy"><?php echo $display['contentTitle']; ?></a>
                     </p>
