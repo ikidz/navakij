@@ -451,6 +451,11 @@ if( isset( $jobs ) && count( $jobs ) > 0 ){
 }
 /* Job Vacancy - End */
 
+/* Company Policy - Start */
+$route['(:any)/company-policy'] = 'policy/landing';
+$route['(:any)/company-policy/(:any)'] = 'policy/index/$2';
+/* Company Policy - End */
+
 // print_r( $route );
 // exit();
 /* End of file routes.php */
