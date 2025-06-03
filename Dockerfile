@@ -11,6 +11,8 @@ RUN echo "upload_max_filesize=20M" > /usr/local/etc/php/conf.d/uploads.ini \
 
 WORKDIR /var/www/html
 
-# COPY start.sh /start.sh
-# RUN chmod +x /start.sh
-# CMD ["/start.sh"]
+# Add the startup script
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
+
+ENTRYPOINT ["/start.sh"]
