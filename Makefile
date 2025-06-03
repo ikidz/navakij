@@ -14,7 +14,7 @@ uat-up:
 uat-init:
 	docker-compose -f uat.yml build
 	docker-compose -f uat.yml up -d
-	docker-compose -f uat.yml exec lobsteryatch-ua-app composer install
+	docker-compose -f uat.yml exec navakij-ua-app composer install
 uat-build:
 	docker-compose -f uat.yml build
 	docker-compose -f uat.yml up -d
@@ -23,15 +23,15 @@ uat-down:
 uat-start:
 	docker-compose -f uat.yml start
 uat-stop-app:
-	docker-compose -f uat.yml stop lobsteryatch-ua-app
+	docker-compose -f uat.yml stop navakij-ua-app
 uat-stop:
 	docker-compose -f uat.yml stop
 uat-log:
 	docker-compose -f uat.yml logs -f
 uat-bash:
-	docker-compose -f uat.yml exec lobsteryatch-ua-app bash
+	docker-compose -f uat.yml exec navakij-ua-app bash
 uat-sh:
-	docker-compose -f uat.yml exec lobsteryatch-ua-app sh
+	docker-compose -f uat.yml exec navakij-ua-app sh
 uat-restart:
 	docker-compose -f uat.yml restart
 
