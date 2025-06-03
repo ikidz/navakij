@@ -28,7 +28,7 @@ services:
     image: nginx:latest
     container_name: navakij-ua-nginx
     volumes:
-      - ./laravel:/var/www/html
+      - ./navakijwebsite:/var/www/html
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
     depends_on:
       - navakij-ua-app
