@@ -182,7 +182,7 @@ class ImportBranchJob implements ShouldQueue
                 ];
             });
 
-            \Excel::store(new ReportBranchExport($results), 'branch_bulks/'.$report_file, config("filesystems.default"));
+            \Excel::store(new ReportBranchExport($results), 'branch_bulks/'.$report_file, config("filesystems.ci_local"));
             $this->finish($results,$report_file);
 
         } catch (Exception $e) {
