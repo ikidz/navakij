@@ -38,7 +38,7 @@
     </div>
     <div class="table-responsive p-3">
 
-        <?php if( $category['category_id'] == 4 || $category['category_id'] == 6 ): ?>
+        <?php if( in_array( $category['category_id'], [4,5,6] ) === true ): ?>
             <table class="table table-striped">
                 <thead>
                     <tr>
