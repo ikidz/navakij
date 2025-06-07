@@ -35,7 +35,7 @@
     <?php if( in_array( $category['category_id'], [4,5,6] ) === true ): ?>
         <div class="d-flex flex-wrap">
             <?php if( $this->_language == 'th' ): ?>
-                <p class="col-12 small text-right navy mr-3">* หมายเหตุ : บัตร H = บัตรประกันสุขภาพ, บัตร HP = บัตรประกันสุขภาพพพิเศษ, บัตร HPT = บัตรประกันสุขภาพพิเศษสำหรับผู้สูงอายุ</p>
+                <p class="col-12 small text-right navy mr-3">* หมายเหตุ : บัตร H = บัตรประกันสุขภาพ, บัตร HP = บัตรประกันสุขภาพพิเศษ, บัตร HPT = บัตรประกันสุขภาพพิเศษสำหรับผู้สูงอายุ</p>
                 <p class="col-12 small text-right navy mr-3">** หมายเหตุ : IPD = ผู้ป่วยใน, OPD = ผู้ป่วยนอก</p>
             <?php else: ?>
                 <p class="col-12 small text-right navy mr-3">* Note : H Card = Health Insurance Card, HP Card = Health Insurance Card (Special), HPT Card = Health Insurance Card (Special for Elderly)</p>
@@ -147,7 +147,7 @@
     <?php if( in_array( $category['category_id'], [4,5,6] ) === true ): ?>
         <div class="d-flex flex-wrap mb-3">
             <?php if( $this->_language == 'th' ): ?>
-                <p class="col-12 small text-right navy mr-3">* หมายเหตุ : บัตร H = บัตรประกันสุขภาพ, บัตร HP = บัตรประกันสุขภาพพพิเศษ, บัตร HPT = บัตรประกันสุขภาพพิเศษสำหรับผู้สูงอายุ</p>
+                <p class="col-12 small text-right navy mr-3">* หมายเหตุ : บัตร H = บัตรประกันสุขภาพ, บัตร HP = บัตรประกันสุขภาพพิเศษ, บัตร HPT = บัตรประกันสุขภาพพิเศษสำหรับผู้สูงอายุ</p>
                 <p class="col-12 small text-right navy mr-3">** หมายเหตุ : IPD = ผู้ป่วยใน, OPD = ผู้ป่วยนอก</p>
             <?php else: ?>
                 <p class="col-12 small text-right navy mr-3">* Note : H Card = Health Insurance Card, HP Card = Health Insurance Card (Special), HPT Card = Health Insurance Card (Special for Elderly)</p>
