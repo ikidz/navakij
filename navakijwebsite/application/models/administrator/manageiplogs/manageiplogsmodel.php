@@ -25,7 +25,8 @@ class Manageiplogsmodel extends CI_Model{
 		}
 
         if($aSort['sort_onlythai'] == 1 ){
-            $query = $this->db->where('country_code', 'TH');
+            $query = $this->db->where('country_code', 'TH')
+								->or_where('country_code', null);
         }
 
         $query = $this->db->order_by('created_at','desc')
