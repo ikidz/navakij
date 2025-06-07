@@ -32,6 +32,17 @@
             <img src="<?php echo assets_url('img/logo.png'); ?>" alt="" class="img-fullwidth" />
         </a>
     </div>
+    <?php if( in_array( $category['category_id'], [4,5,6] ) === true ): ?>
+        <div class="d-flex flex-wrap">
+            <?php if( $this->_language == 'th' ): ?>
+                <p class="col-12 small text-right navy mr-3">* หมายเหตุ : บัตร H = บัตรประกันสุขภาพ, บัตร HP = บัตรประกันสุขภาพพพิเศษ, บัตร HPT = บัตรประกันสุขภาพพิเศษสำหรับผู้สูงอายุ</p>
+                <p class="col-12 small text-right navy mr-3">** หมายเหตุ : IPD = ผู้ป่วยใน, OPD = ผู้ป่วยนอก</p>
+            <?php else: ?>
+                <p class="col-12 small text-right navy mr-3">* Note : H Card = Health Insurance Card, HP Card = Health Insurance Card (Special), HPT Card = Health Insurance Card (Special for Elderly)</p>
+                <p class="col-12 small text-right navy ml-3">** Note : IPD = Inpatient, OPD = Outpatient</p>
+            <?php endif; ?>
+        </div>
+    <?php endif; ?>
     <div class="bg-navy p-3 py-lg-2 d-flex flex-wrap">
         <h5 class="white mb-3 mb-lg-0 mx-auto ml-lg-0">เครือข่ายบริการสินไหมฯ : <?php echo $category['category_title_'.$this->_language]; ?></h5>
         <h5 class="white mx-auto mr-lg-0">The Navakij Insurance Public Company Limited</h5>
@@ -52,10 +63,10 @@
                             <p class="bold text-center">เขต/อำเภอ</p>
                         </th>
                         <th class="bg-lightgrey">
-                            <p class="bold text-center">บัตร</p>
+                            <p class="bold text-center">บัตร*</p>
                         </th>
                         <th class="bg-lightgrey">
-                            <p class="bold text-center">IPD/OPD</p>
+                            <p class="bold text-center">IPD/OPD**</p>
                         </th>
                         <th class="bg-lightgrey">
                             <p class="bold text-center">เบอร์โทรศัพท์</p>
@@ -132,6 +143,18 @@
             </table>
         <?php endif; ?>
     </div>
+
+    <?php if( in_array( $category['category_id'], [4,5,6] ) === true ): ?>
+        <div class="d-flex flex-wrap mb-3">
+            <?php if( $this->_language == 'th' ): ?>
+                <p class="col-12 small text-right navy mr-3">* หมายเหตุ : บัตร H = บัตรประกันสุขภาพ, บัตร HP = บัตรประกันสุขภาพพพิเศษ, บัตร HPT = บัตรประกันสุขภาพพิเศษสำหรับผู้สูงอายุ</p>
+                <p class="col-12 small text-right navy mr-3">** หมายเหตุ : IPD = ผู้ป่วยใน, OPD = ผู้ป่วยนอก</p>
+            <?php else: ?>
+                <p class="col-12 small text-right navy mr-3">* Note : H Card = Health Insurance Card, HP Card = Health Insurance Card (Special), HPT Card = Health Insurance Card (Special for Elderly)</p>
+                <p class="col-12 small text-right navy ml-3">** Note : IPD = Inpatient, OPD = Outpatient</p>
+            <?php endif; ?>
+        </div>
+    <?php endif; ?>
 
 </div>
 <?php /* #container - End */ ?>
