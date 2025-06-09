@@ -48,7 +48,7 @@
         */ ?>
     </div>
     <div class="p-3 py-lg-2 d-flex flex-wrap">
-        <h5 class="navy bold mb-3 mb-lg-0 mx-auto ml-lg-0">เครือข่ายบริการสินไหมฯ : <?php echo $category['category_title_'.$this->_language]; ?></h5>
+        <h5 class="navy bold mb-3 mb-lg-0 mx-auto ml-lg-0">เครือข่ายบริการสินไหมทดแทน : <?php echo $category['category_title_'.$this->_language]; ?></h5>
         <?php /*
         <h5 class="white mx-auto mr-lg-0">The Navakij Insurance Public Company Limited</h5>
         */ ?>
