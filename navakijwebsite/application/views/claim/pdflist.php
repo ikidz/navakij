@@ -27,22 +27,24 @@
 
 <?php /* #container - Start */ ?>
 <div id="container">
-    <div class="col-4 col-md-2 col-lg-1 py-3 mx-auto text-center">
-        <a href="<?php echo site_url(''); ?>">
-            <img src="<?php echo assets_url('img/logo.png'); ?>" alt="" class="img-fullwidth" />
-        </a>
-    </div>
-    <?php if( in_array( $category['category_id'], [4,5,6] ) === true ): ?>
-        <div class="d-flex flex-wrap">
-            <?php if( $this->_language == 'th' ): ?>
-                <p class="col-12 small text-right navy mr-3">* หมายเหตุ : บัตร H = บัตรประกันสุขภาพ, บัตร HP = บัตรประกันสุขภาพพิเศษ, บัตร HPT = บัตรประกันสุขภาพพิเศษสำหรับผู้สูงอายุ</p>
-                <p class="col-12 small text-right navy mr-3">** หมายเหตุ : I = ผู้ป่วยใน (IPD / In-Patient Department), O = ผู้ป่วยนอก (OPD / Out-Patient Department)</p>
-            <?php else: ?>
-                <p class="col-12 small text-right navy mr-3">* Note : H Card = Health Insurance Card, HP Card = Health Insurance Card (Special), HPT Card = Health Insurance Card (Special for Elderly)</p>
-                <p class="col-12 small text-right navy ml-3">** Note : I = Inpatient (IPD / In-Patient Department), O = Outpatient (OPD / Out-Patient Department)</p>
-            <?php endif; ?>
+    <div class="d-flex flex-wrap">
+        <div class="col-4 col-md-2 col-lg-2 py-3 px-4 text-left">
+            <a href="<?php echo site_url(''); ?>">
+                <img src="<?php echo assets_url('img/logo.png'); ?>" alt="" class="img-fullwidth" />
+            </a>
         </div>
-    <?php endif; ?>
+        <?php if( in_array( $category['category_id'], [4,5,6] ) === true ): ?>
+            <div class="col-8 col-md-8 ml-auto my-auto">
+                <?php if( $this->_language == 'th' ): ?>
+                    <p class="small text-right navy mr-2">* หมายเหตุ : บัตร H = บัตรประกันสุขภาพ, บัตร HP = บัตรประกันสุขภาพพิเศษ, บัตร HPT = บัตรประกันสุขภาพพิเศษสำหรับผู้สูงอายุ</p>
+                    <p class="small text-right navy mr-2">** หมายเหตุ : I = ผู้ป่วยใน (IPD / In-Patient Department), O = ผู้ป่วยนอก (OPD / Out-Patient Department)</p>
+                <?php else: ?>
+                    <p class="small text-right navy mr-2">* Note : H Card = Health Insurance Card, HP Card = Health Insurance Card (Special), HPT Card = Health Insurance Card (Special for Elderly)</p>
+                    <p class="small text-right navy mr-2">** Note : I = Inpatient (IPD / In-Patient Department), O = Outpatient (OPD / Out-Patient Department)</p>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
+    </div>
     <div class="bg-navy p-3 py-lg-2 d-flex flex-wrap">
         <h5 class="white mb-3 mb-lg-0 mx-auto ml-lg-0">เครือข่ายบริการสินไหมฯ : <?php echo $category['category_title_'.$this->_language]; ?></h5>
         <h5 class="white mx-auto mr-lg-0">The Navakij Insurance Public Company Limited</h5>
