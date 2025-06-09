@@ -33,6 +33,7 @@
                 <img src="<?php echo assets_url('img/logo.png'); ?>" alt="" class="img-fullwidth" />
             </a>
         </div>
+        <?php /*
         <?php if( in_array( $category['category_id'], [4,5,6] ) === true ): ?>
             <div class="col-12 col-md-12 col-lg-8 ml-auto mb-3 my-lg-auto">
                 <?php if( $this->_language == 'th' ): ?>
@@ -44,10 +45,13 @@
                 <?php endif; ?>
             </div>
         <?php endif; ?>
+        */ ?>
     </div>
-    <div class="bg-navy p-3 py-lg-2 d-flex flex-wrap">
-        <h5 class="white mb-3 mb-lg-0 mx-auto ml-lg-0">เครือข่ายบริการสินไหมฯ : <?php echo $category['category_title_'.$this->_language]; ?></h5>
+    <div class="p-3 py-lg-2 d-flex flex-wrap">
+        <h5 class="navy bold mb-3 mb-lg-0 mx-auto ml-lg-0">เครือข่ายบริการสินไหมฯ : <?php echo $category['category_title_'.$this->_language]; ?></h5>
+        <?php /*
         <h5 class="white mx-auto mr-lg-0">The Navakij Insurance Public Company Limited</h5>
+        */ ?>
     </div>
     <div class="table-responsive p-3">
 
