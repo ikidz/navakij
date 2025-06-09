@@ -455,6 +455,11 @@ li {
   background-color: #000;
   color: #fff;
 }
+.btn-white{
+  border-color:#fff;
+  background-color:#fff;
+  color:#223d66;
+}
 .btn-blue{
   border-color: #005FC4;
   background-color: #005FC4;
@@ -521,6 +526,11 @@ li {
 .btn-black:hover {
   background-color: #fff;
   color: #000;
+}
+.btn-white:hover{
+  border-color:#000;
+  background-color:#000;
+  color:#fff;
 }
 .btn-blue:hover{
   border-color: #fff;
