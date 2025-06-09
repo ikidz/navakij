@@ -28,13 +28,13 @@
 <?php /* #container - Start */ ?>
 <div id="container">
     <div class="d-flex flex-wrap">
-        <div class="col-4 col-md-2 col-lg-2 py-3 px-4 text-left">
+        <div class="col-6 col-md-4 col-lg-2 py-3 px-5 mx-auto mx-lg-0 text-left">
             <a href="<?php echo site_url(''); ?>">
                 <img src="<?php echo assets_url('img/logo.png'); ?>" alt="" class="img-fullwidth" />
             </a>
         </div>
         <?php if( in_array( $category['category_id'], [4,5,6] ) === true ): ?>
-            <div class="col-8 col-md-8 ml-auto my-auto">
+            <div class="col-12 col-md-12 col-lg-8 ml-auto mb-3 my-lg-auto">
                 <?php if( $this->_language == 'th' ): ?>
                     <p class="small text-right navy mr-2">* หมายเหตุ : บัตร H = บัตรประกันสุขภาพ, บัตร HP = บัตรประกันสุขภาพพิเศษ, บัตร HPT = บัตรประกันสุขภาพพิเศษสำหรับผู้สูงอายุ</p>
                     <p class="small text-right navy mr-2">** หมายเหตุ : I = ผู้ป่วยใน (IPD / In-Patient Department), O = ผู้ป่วยนอก (OPD / Out-Patient Department)</p>
