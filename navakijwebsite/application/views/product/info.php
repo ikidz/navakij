@@ -118,7 +118,7 @@
                 <?php /* #product-sidebar - Start */ ?>
                 <div id="product-sidebar" class="col-12 col-md-4 py-3">
                     <h4>
-                        <a href="#contactForm" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="contactForm" class="d-flex flex-wrap align-items-center border-radius bg-blue white p-3">
+                        <a href="#contactForm" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="contactForm" class="d-flex flex-wrap align-items-center border-radius bg-navy white p-3">
                             <strong class="white"><?php echo ( $this->_language == 'th' ? 'ข้อมูลสำหรับติดต่อกลับ' : 'Contact form' ); ?></strong>
                             <span class="ml-auto text-right">
                                 <i class="fas fa-chevron-down white"></i>
@@ -126,7 +126,7 @@
                             </span>
                         </a>
                     </h4>
-                    <div id="contactForm" class="collapse multi-collapse p-3 mt-3 show bg-blue border-radius">
+                    <div id="contactForm" class="collapse multi-collapse p-3 mt-3 show bg-navy border-radius">
                     <?php $message = $this->session->flashdata('message');
                                 
                                 if(@$message!=NULL){ ?>
@@ -230,7 +230,7 @@
                             <?php echo form_error('g-recaptcha-response'); ?>
                             
                             <div class="form-actions text-center mt-3">
-                                <button type="submit" name="btn-submit" id="btn-submit" class="btn btn-navy"><?php echo ( $this->_language == 'th' ? 'ตกลง' : 'Submit' ); ?></button>
+                                <button type="submit" name="btn-submit" id="btn-submit" class="btn btn-white"><?php echo ( $this->_language == 'th' ? 'ตกลง' : 'Submit' ); ?></button>
                             </div>
                         </form>
                     </div>
