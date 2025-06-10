@@ -153,10 +153,10 @@
     <?php if( in_array( $category['category_id'], [4,5,6] ) === true ): ?>
         <div class="d-flex flex-wrap mb-3">
             <?php if( $this->_language == 'th' ): ?>
-                <p class="col-12 small text-right navy mr-3">* หมายเหตุ : บัตร H = บัตรประกันสุขภาพ, บัตร HP = บัตรประกันสุขภาพพิเศษ, บัตร HPT = บัตรประกันสุขภาพพิเศษสำหรับผู้สูงอายุ</p>
+                <p class="col-12 small text-right navy mr-3">* หมายเหตุ : H = บัตร NKI HEALTH INSURANCE, P = บัตร NKI PA CARD</p>
                 <p class="col-12 small text-right navy mr-3">** หมายเหตุ : I = ผู้ป่วยใน (IPD / In-Patient Department), O = ผู้ป่วยนอก (OPD / Out-Patient Department)</p>
             <?php else: ?>
-                <p class="col-12 small text-right navy mr-3">* Note : H Card = Health Insurance Card, HP Card = Health Insurance Card (Special), HPT Card = Health Insurance Card (Special for Elderly)</p>
+                <p class="col-12 small text-right navy mr-3">* Note : H = NKI HEALTH INSURANCE CARD, P = NKI PA CARD</p>
                 <p class="col-12 small text-right navy ml-3">** Note : I = Inpatient (IPD / In-Patient Department), O = Outpatient (OPD / Out-Patient Department)</p>
             <?php endif; ?>
         </div>
