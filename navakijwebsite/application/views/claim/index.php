@@ -120,6 +120,15 @@
 			<div class="col-12 pb-3">
 				<p class="text-center">ผลลัพธ์จำนวน <?php echo number_format($total_brances); ?> รายการ</p>
 			</div>
+      <div class="col-12 d-flex flex-wrap mb-3">
+        <?php if( $this->_language == 'th' ): ?>
+            <p class="col-12 small text-right navy mr-3">* หมายเหตุ : H = บัตร NKI HEALTH INSURANCE, P = บัตร NKI PA CARD</p>
+            <p class="col-12 small text-right navy mr-3">** หมายเหตุ : I = ผู้ป่วยใน (IPD / In-Patient Department), O = ผู้ป่วยนอก (OPD / Out-Patient Department)</p>
+        <?php else: ?>
+            <p class="col-12 small text-right navy mr-3">* Note : H = NKI HEALTH INSURANCE CARD, P = NKI PA CARD</p>
+            <p class="col-12 small text-right navy ml-3">** Note : I = Inpatient (IPD / In-Patient Department), O = Outpatient (OPD / Out-Patient Department)</p>
+        <?php endif; ?>
+      </div>
       <?php foreach($branch_list as $key=>$rs) { 
           $cate = $this->claim_model->get_category_branch_info($rs['category_id']);
           $brand = $this->claim_model->get_brand_title($rs['branch_id']);
@@ -159,6 +168,18 @@
         </div>
       </div>
       */ ?>
+      <?php if( $rs['card'] != null && $rs['card'] != "-" ): ?>
+        <div class="row">
+          <div class="label">ประเภทบัตรที่เข้ารักษา</div>
+          <div class="content text-break"><?php echo $rs['card'];?></div>
+        </div>
+      <?php endif; ?>
+      <?php if( $rs['patient_department'] != null && $rs['patient_department'] != "-" ): ?>
+        <div class="row">
+          <div class="label">ประเภทการรักษา</div>
+          <div class="content text-break"><?php echo $rs['patient_department'];?></div>
+        </div>
+      <?php endif; ?>
       <div class="row">
         <div class="label">โทรศัพท์</div>
         <div class="content text-break"><?php echo $rs['branch_tel'];?></div>

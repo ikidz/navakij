@@ -2363,11 +2363,11 @@ html.articles_search_article .news-item .news-item-title p.darkgrey {
 }
 .item-claim .row .label,
 .map-popup .row .label {
-  flex: 0 0 60px;
+  flex: 0 0 100px;
 }
 .item-claim .row .content,
 .map-popup .row .content {
-  flex: 0 0 calc(100% - 60px);
+  flex: 0 0 calc(100% - 100px);
 }
 .item-claim .btn,
 .map-popup .btn {
