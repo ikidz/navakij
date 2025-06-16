@@ -184,18 +184,22 @@
         <div class="label">โทรศัพท์</div>
         <div class="content text-break"><?php echo $rs['branch_tel'];?></div>
       </div>
+      <?php if( $rs['branch_fax'] != null && $rs['branch_fax'] != "-" ): ?>
       <div class="row">
         <div class="label">โทรสาร</div>
         <div class="content text-break"><?php echo $rs['branch_fax'];?></div>
       </div>
-      <div class="row">
-        <div class="label">อีเมล์</div>
-        <div class="content text-break"><?php echo $rs['branch_email'];?></div>
-      </div>
-      <div class="row">
-        <div class="label">เว็บไซต์</div>
-        <div class="content text-break"><?php echo $rs['branch_website'];?></div>
-      </div>
+      <?php endif; ?>
+        <div class="row">
+          <div class="label">อีเมล์</div>
+          <div class="content text-break"><?php echo $rs['branch_email'];?></div>
+        </div>
+      <?php if( $rs['branch_website'] != null && $rs['branch_website'] != "-" ): ?>
+        <div class="row">
+          <div class="label">เว็บไซต์</div>
+          <div class="content text-break"><?php echo $rs['branch_website'];?></div>
+        </div>
+      <?php endif; ?>
       <div class="row">
         <div class="label">สถานที่ตั้ง</div>
         <div class="content text-break"><?php echo $rs['branch_address'];?></div>
