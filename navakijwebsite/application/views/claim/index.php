@@ -122,8 +122,8 @@
 			</div>
       <div class="col-12 d-flex flex-wrap mb-3">
         <?php if( $this->_language == 'th' ): ?>
-            <p class="col-12 small text-right navy mr-3">* หมายเหตุ : NKI HEALTH INSURANCE = บัตรประกันสุขภาพและอุบัติเหตุ, NKI PA CARD = บัตรประกันอุบัติเหตุ</p>
-            <p class="col-12 small text-right navy mr-3">** หมายเหตุ : IPD = ผู้ป่วยใน In-Patient Department, OPD = ผู้ป่วยนอก Out-Patient Department</p>
+            <p class="col-12 small text-right navy mr-3">* <span class="red bold">คำแนะนำ</span> : NKI HEALTH INSURANCE = บัตรประกันสุขภาพและอุบัติเหตุ, NKI PA CARD = บัตรประกันอุบัติเหตุ</p>
+            <p class="col-12 small text-right navy mr-3">** <span class="red bold">คำแนะนำ</span> : IPD = ผู้ป่วยใน In-Patient Department, OPD = ผู้ป่วยนอก Out-Patient Department</p>
         <?php else: ?>
             <p class="col-12 small text-right navy mr-3">* Note : NKI HEALTH INSURANCE = Health and Accidental insurance card, NKI PA CARD = Accidental insurance card</p>
             <p class="col-12 small text-right navy ml-3">** Note : I = In-Patient Department, O = Out-Patient Department</p>
