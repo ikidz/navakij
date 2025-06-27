@@ -6,6 +6,7 @@ services:
     container_name: navakij-dev-app
     volumes:
       - ./navakijwebsite:/var/www/html
+      - ./nginx/php.ini:/usr/local/etc/php/conf.d/custom-php.ini
     working_dir: /var/www/html
     depends_on:
       - navakij-dev-db
