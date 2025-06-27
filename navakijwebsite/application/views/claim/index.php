@@ -125,8 +125,8 @@
             <p class="col-12 small text-right navy mr-3">* <span class="red bold">คำแนะนำ</span> : NKI HEALTH INSURANCE = บัตรประกันสุขภาพและอุบัติเหตุ, NKI PA CARD = บัตรประกันอุบัติเหตุ</p>
             <p class="col-12 small text-right navy mr-3">** <span class="red bold">คำแนะนำ</span> : IPD = ผู้ป่วยใน In-Patient Department, OPD = ผู้ป่วยนอก Out-Patient Department</p>
         <?php else: ?>
-            <p class="col-12 small text-right navy mr-3">* Note : NKI HEALTH INSURANCE = Health and Accidental insurance card, NKI PA CARD = Accidental insurance card</p>
-            <p class="col-12 small text-right navy ml-3">** Note : I = In-Patient Department, O = Out-Patient Department</p>
+            <p class="col-12 small text-right navy mr-3">* <span class="red bold">Note</span> : NKI HEALTH INSURANCE = Health and Accidental insurance card, NKI PA CARD = Accidental insurance card</p>
+            <p class="col-12 small text-right navy ml-3">** <span class="red bold">Note</span> : I = In-Patient Department, O = Out-Patient Department</p>
         <?php endif; ?>
       </div>
       <?php foreach($branch_list as $key=>$rs) { 
