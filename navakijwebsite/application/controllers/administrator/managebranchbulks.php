@@ -104,7 +104,7 @@ class Managebranchbulks extends CI_CONTROLLER{
 	public function show_status($text, $row){
 		switch($text){
 			case 'finished'	    	: return '<span class="label label-success"><i class="icon-check"></i> เสร็จสมบูรณ์</span><br />(เมื่อวันที่ '.thai_convert_fulldate( $row['bulk_finished_time'] ).' )'; break;
-			case 'patial_finished'	: return '<span class="label label-success"><i class="icon-check"></i> สำเร็จบางส่วน</span><br />(เมื่อวันที่ '.thai_convert_fulldate( $row['bulk_finished_time'] ).' )<br />หมายเหตุ : '.$row['bulk_remark'].'<br />รายงาน : <a href="'.base_url('public/core/uploaded/branch_bulks/'.$row['bulk_report']).'">ดาวน์โหลด</a>'; break;
+			case 'patial_finished'	: return '<span class="label label-success"><i class="icon-check"></i> สำเร็จบางส่วน</span><br />(เมื่อวันที่ '.thai_convert_fulldate( $row['bulk_finished_time'] ).' )<br />หมายเหตุ : '.$row['bulk_remark'].'<br />รายงาน : <a href="'.base_url('navakij-batch/public/storage/branch_bulks/'.$row['bulk_report']).'">ดาวน์โหลด</a>'; break;
 			case 'processing'		: return '<span class="label label-info"><i class="icon-spinner"></i> กำลังประมวลผล</span>'; break;
 			case 'error'    		: return '<span class="label label-important"><i class="icon-exclamation-triangle"></i> เกิดข้อผิดพลาด</span><br />เนื่องจาก : '.$row['bulk_remark']; break;
 			case 'pending'	    	: return '<span class="label label-warning"><i class="icon-cogs"></i> อยู่ระหว่างการตรวจสอบ</span>'; break;
