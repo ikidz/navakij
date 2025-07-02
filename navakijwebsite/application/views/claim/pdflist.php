@@ -54,16 +54,16 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th class="bg-lightgrey">
+                        <th class="bg-lightgrey" style="width:300px;">
                             <p class="bold text-center">ชื่อ<?php echo $category['category_title_'.$this->_language]; ?></p>
                         </th>
-                        <th class="bg-lightgrey">
+                        <th class="bg-lightgrey" style="width:400px;">
                             <p class="bold text-center">ที่อยู่</p>
                         </th>
-                        <th class="bg-lightgrey">
+                        <th class="bg-lightgrey" style="width:150px;">
                             <p class="bold text-center">เขต/อำเภอ</p>
                         </th>
-                        <th class="bg-lightgrey">
+                        <th class="bg-lightgrey" style="width:400px;">
                             <p class="bold text-center">บัตร*</p>
                         </th>
                         <th class="bg-lightgrey">
