@@ -35,9 +35,9 @@
         </div>
     </div>
     <div class="p-3 py-lg-2 d-flex flex-wrap align-items-center">
-        <h5 class="navy bold mb-3 mb-lg-0 mx-auto ml-lg-0">เครือข่ายบริการสินไหมทดแทน : <?php echo $category['category_title_'.$this->_language]; ?></h5>
+        <h5 class="col-12 col-md-5 navy bold mb-3 mb-lg-0 mx-auto ml-lg-0">เครือข่ายบริการสินไหมทดแทน : <?php echo $category['category_title_'.$this->_language]; ?></h5>
         <?php if( in_array( $category['category_id'], [4,5,6] ) === true ): ?>
-            <div class="d-flex flex-wrap mb-3 ml-auto my-auto">
+            <div class="col-12 col-md-7 d-flex flex-wrap mb-3 ml-auto my-auto">
                 <?php if( $this->_language == 'th' ): ?>
                     <p class="col-12 small text-right navy mr-3">* <span class="red bold">คำแนะนำ</span> : NKI HEALTH INSURANCE = บัตรประกันสุขภาพและอุบัติเหตุ, NKI PA CARD = บัตรประกันอุบัติเหตุ</p>
                     <p class="col-12 small text-right navy mr-3">** <span class="red bold">คำแนะนำ</span> : IPD = ผู้ป่วยใน In-Patient Department, OPD = ผู้ป่วยนอก Out-Patient Department</p>
@@ -64,7 +64,7 @@
                             <p class="bold text-center">เขต/อำเภอ</p>
                         </th>
                         <th class="bg-lightgrey" style="width:400px;">
-                            <p class="bold text-center">บัตร*</p>
+                            <p class="bold text-center">ประเภทบัตร*</p>
                         </th>
                         <th class="bg-lightgrey">
                             <p class="bold text-center">IPD/OPD**</p>
