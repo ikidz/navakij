@@ -83,6 +83,8 @@ class Managedocuments extends CI_CONTROLLER{
 		$this->form_validation->set_rules('document_title_en','ชื่อ (En)','trim|required');
 		$this->form_validation->set_rules('document_desc_th','รายละเอียด (ไทย)','trim');
 		$this->form_validation->set_rules('document_desc_en','รายละเอียด (En)','trim');
+		$this->form_validation->set_rules('document_content_th','รายละเอียด (En)','trim');
+		$this->form_validation->set_rules('document_content_en','รายละเอียด (En)','trim');
 		$this->form_validation->set_rules('document_publish_date', 'วันที่โพสต์','trim');
         $this->form_validation->set_rules('document_meta_title', 'Meta Title', 'trim');
         $this->form_validation->set_rules('document_meta_description', 'Meta Description', 'trim');
@@ -121,6 +123,8 @@ class Managedocuments extends CI_CONTROLLER{
 		$this->form_validation->set_rules('document_title_en','ชื่อ (En)','trim|required');
 		$this->form_validation->set_rules('document_desc_th','รายละเอียด (ไทย)','trim');
 		$this->form_validation->set_rules('document_desc_en','รายละเอียด (En)','trim');
+		$this->form_validation->set_rules('document_content_th','รายละเอียด (En)','trim');
+		$this->form_validation->set_rules('document_content_en','รายละเอียด (En)','trim');
 		$this->form_validation->set_rules('document_publish_date', 'วันที่โพสต์','trim');
         $this->form_validation->set_rules('document_meta_title', 'Meta Title', 'trim');
         $this->form_validation->set_rules('document_meta_description', 'Meta Description', 'trim');
