@@ -71,7 +71,9 @@
         </div>
     </div>
     <div class="row my-3">
-        <h4 class="navy">การดำรงตำแหน่งปัจจุบันในกิจการอื่น</h4>
+        <p class="bold navy">
+            การดำรงตำแหน่งปัจจุบันในกิจการอื่น
+        </p>
     </div>
     <div class="row">
         <div class="col-4">
