@@ -42,7 +42,6 @@ class Policy extends CI_Controller {
     }
 
     public function index( $meta_url='', $contentType='', $contentId=0 ){
-
         $this->_data['category'] = $this->policy_model->get_categoryinfo_byid( 34 );
         $this->_data['contents'] = $this->policy_model->get_sidebar_byurl( $meta_url );
         $this->_data['display'] = $this->policy_model->get_contentinfo_byid( $contentType, $contentId, $this->_data['contents'] );
