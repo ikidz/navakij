@@ -12,6 +12,7 @@ services:
     depends_on:
       - navakij-ua-db
     environment:
+      - LARAVEL_APP_PATH=/var/www/html/navakij-batch
       - DB_CONNECTION=mysql
       - DB_HOST=navakij-ua-db
       - DB_PORT=3306
