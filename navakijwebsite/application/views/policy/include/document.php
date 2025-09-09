@@ -1,3 +1,10 @@
+<?php if( $display['info']['document_content_'.$this->_language] ): ?>
+    <div class="content-box col-12 px-0">
+        <div class="content-box">
+            <?php echo $display['info']['document_content_'.$this->_language]; ?>
+        </div>
+    </div>
+<?php endif; ?>
 <div class="download-list mt-5">
     <?php if( isset( $display['info'] ) && count( $display['info'] ) > 0 ): ?>
         <?php $document = $display['info']; ?>

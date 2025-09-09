@@ -19,7 +19,7 @@
                                     $active = '';
                                     $color = 'black';
                                     if( isset( $document['document_meta_url'] ) && $document['document_meta_url'] != '' ){
-                                        $url = 'company-policy/'.$contents['article']['category']['category_meta_url'].'/document/'.$document['document_id'];
+                                        $url = 'sustainability/'.$contents['article']['category']['category_meta_url'].'/document/'.$document['document_id'];
                                         $active = ( @$display['contentId'] == $document['document_id'] ? 'active':'' );
                                         $color = ( @$display['contentId'] == $document['document_id'] ? 'navy':'black' );
                                     }else{
@@ -27,7 +27,7 @@
                                     }
                         ?>
                                     <li class="<?php echo $active; ?>">
-                                        <a href="<?php echo $url; ?>" class="btn-text <?php echo $color; ?> px-1">
+                                        <a href="<?php echo site_url($url); ?>" class="btn-text <?php echo $color; ?> px-1">
                                             <?php echo $document['document_title_'.$this->_language]; ?>
                                         </a>
                                     </li>
@@ -39,7 +39,7 @@
                                     $active = '';
                                     $color = 'black';
                                     if( isset( $article['article_meta_url'] ) && $article['article_meta_url'] != '' ){
-                                        $url = 'company-policy/'.$contents['article']['category']['category_meta_url'].'/article/'.$article['article_id'];
+                                        $url = 'sustainability/'.$contents['article']['category']['category_meta_url'].'/article/'.$article['article_id'];
                                         $active = ( @$display['contentId'] == $article['article_id'] ? 'active':'' );
                                         $color = ( @$display['contentId'] == $article['article_id'] ? 'navy':'black' );
                                     }else{
@@ -47,7 +47,7 @@
                                     }
                         ?>
                                     <li class="<?php echo $active; ?>">
-                                        <a href="<?php echo $url; ?>" class="btn-text <?php echo $color; ?> px-1">
+                                        <a href="<?php echo site_url($url); ?>" class="btn-text <?php echo $color; ?> px-1">
                                             <?php echo $article['article_title_'.$this->_language]; ?>
                                         </a>
                                     </li>
@@ -56,20 +56,13 @@
                             }
                         ?>
                     <?php else: ?>
-                        <?php if( $contents['article']['category']['category_meta_url'] == 'social-aspect' ): ?>
-                            <li>
-                                <a href="<?php echo site_url('news-update/csr-news'); ?>" class="btn-text navy px-1" target="_blank">
-                                    <?php echo ( $this->_language == 'th' ? 'กิจกรรมเพื่อสังคม' : 'CSR News' ); ?>
-                                </a>
-                            </li>
-                        <?php endif; ?>
                         <?php
                             if( isset( $contents['article']['lists'] ) && count( $contents['article']['lists'] ) > 0 ){
                                 foreach( $contents['article']['lists'] as $key => $article ){
                                     $active = '';
                                     $color = 'black';
                                     if( isset( $article['article_meta_url'] ) && $article['article_meta_url'] != '' ){
-                                        $url = 'company-policy/'.$contents['article']['category']['category_meta_url'].'/article/'.$article['article_id'];
+                                        $url = 'sustainability/'.$contents['article']['category']['category_meta_url'].'/article/'.$article['article_id'];
                                         $active = ( @$display['contentId'] == $article['article_id'] ? 'active':'' );
                                         $color = ( @$display['contentId'] == $article['article_id'] ? 'navy':'black' );
                                     }else{
@@ -77,7 +70,7 @@
                                     }
                         ?>
                                     <li class="<?php echo $active; ?>">
-                                        <a href="<?php echo $url; ?>" class="btn-text <?php echo $color; ?> px-1">
+                                        <a href="<?php echo site_url($url); ?>" class="btn-text <?php echo $color; ?> px-1">
                                             <?php echo $article['article_title_'.$this->_language]; ?>
                                         </a>
                                     </li>
@@ -89,7 +82,7 @@
                                     $active = '';
                                     $color = 'black';
                                     if( isset( $document['document_meta_url'] ) && $document['document_meta_url'] != '' ){
-                                        $url = 'company-policy/'.$contents['article']['category']['category_meta_url'].'/document/'.$document['document_id'];
+                                        $url = 'sustainability/'.$contents['article']['category']['category_meta_url'].'/document/'.$document['document_id'];
                                         $active = ( @$display['contentId'] == $document['document_id'] ? 'active':'' );
                                         $color = ( @$display['contentId'] == $document['document_id'] ? 'navy':'black' );
                                     }else{
@@ -97,7 +90,7 @@
                                     }
                         ?>
                                     <li class="<?php echo $active; ?>">
-                                        <a href="<?php echo $url; ?>" class="btn-text <?php echo $color; ?> px-1">
+                                        <a href="<?php echo site_url($url); ?>" class="btn-text <?php echo $color; ?> px-1">
                                             <?php echo $document['document_title_'.$this->_language]; ?>
                                         </a>
                                     </li>
@@ -105,6 +98,13 @@
                                 }
                             }
                         ?>
+                        <?php if( $contents['article']['category']['category_meta_url'] == 'social-aspect' ): ?>
+                            <li>
+                                <a href="<?php echo site_url('news-update/csr-news'); ?>" class="btn-text navy px-1" target="_blank">
+                                    <?php echo ( $this->_language == 'th' ? 'ความรับผิดชอบต่อสังคม' : 'CSR News' ); ?>
+                                </a>
+                            </li>
+                        <?php endif; ?>
                     <?php endif; ?>
                 </ul>
             </div>

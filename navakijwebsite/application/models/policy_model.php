@@ -143,6 +143,7 @@ class Policy_model extends CI_Model {
     public function get_document_file_bydocumentid($documentid){
         $query = $this->db->where('document_id', $documentid)
                             ->where('document_file_status','approved')
+                            ->order_by('document_file_order','asc')
                             ->order_by('document_file_createdtime','desc')
                             ->get('document_files')
                             ->result_array();

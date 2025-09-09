@@ -19,7 +19,7 @@
                             <?php endif; ?>
                             <h4 class="service-title text-center navy my-3"><?php echo $category['category_title_'.$this->_language]; ?></h4>
                             <?php /* <p class="service-sdesc text-center navy">Lorem Ipsum is simply dummy text</p> */ ?>
-                            <p class="text-center"><a href="<?php echo site_url( 'company-policy/'.$category['category_meta_url'] ); ?>" class="btn btn-turquoise">อ่านเพิ่มเติม</a></p>
+                            <p class="text-center"><a href="<?php echo site_url( 'sustainability/'.$category['category_meta_url'] ); ?>" class="btn btn-turquoise">อ่านเพิ่มเติม</a></p>
                         </div>
                     <?php endforeach; ?>
                 <?php endif; ?>
