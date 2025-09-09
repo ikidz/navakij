@@ -307,18 +307,18 @@ if( isset( $knowledge_categories ) && count( $knowledge_categories ) > 0 ){
 /* Knowledges - End */
 
 /* Sustainability - Start */
-$sustainability_document_categories = $db->where('main_id', 1)
-                                ->where('category_status','approved')
-                                ->get('document_categories')
-                                ->result_array();
-if( isset( $sustainability_document_categories ) && count( $sustainability_document_categories ) > 0 ){
-    foreach( $sustainability_document_categories as $key => $category ){
-        if( $key == 0 ){
-            $route['(:any)/sustainability'] = 'sustainable/documents/'.$category['category_id'];
-        }
-        $route['(:any)/'.$category['category_meta_url']] = 'sustainable/documents/'.$category['category_id'];
-    }
-}
+// $sustainability_document_categories = $db->where('main_id', 1)
+//                                 ->where('category_status','approved')
+//                                 ->get('document_categories')
+//                                 ->result_array();
+// if( isset( $sustainability_document_categories ) && count( $sustainability_document_categories ) > 0 ){
+//     foreach( $sustainability_document_categories as $key => $category ){
+//         if( $key == 0 ){
+//             $route['(:any)/sustainability'] = 'sustainable/documents/'.$category['category_id'];
+//         }
+//         $route['(:any)/'.$category['category_meta_url']] = 'sustainable/documents/'.$category['category_id'];
+//     }
+// }
 /* Sustainability - End */
 
 /* Investors - Start */
@@ -452,9 +452,11 @@ if( isset( $jobs ) && count( $jobs ) > 0 ){
 /* Job Vacancy - End */
 
 /* Company Policy - Start */
-$route['(:any)/company-policy'] = 'policy/landing';
-$route['(:any)/company-policy/(:any)'] = 'policy/index/$2';
+$route['(:any)/sustainability-landing'] = 'policy/landing';
+$route['(:any)/sustainability/(:any)'] = 'policy/index/$2';
 /* Company Policy - End */
+
+$route['debug-document-files'] = 'welcome/debug_documentfiles';
 
 // print_r( $route );
 // exit();
