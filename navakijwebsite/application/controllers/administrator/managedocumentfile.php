@@ -60,11 +60,13 @@ class Managedocumentfile extends CI_CONTROLLER{
         $this->admin_model->set_column('document_file_id','ลำดับ','10%','icon-list-ol');
         $this->admin_model->set_column('document_file_th','ไฟล์','15%','icon-picture-o');
         $this->admin_model->set_column('document_file_title_th','หัวข้อ','35%','icon-font');
+		$this->admin_model->set_column('document_file_order', 'การจัดลำดับ', '15%', 'icon-sort');
         $this->admin_model->set_column('document_file_status','สถานะการแสดงผล','15%','icon-eye-slash');
         $this->admin_model->set_action_button('แก้ไข','managedocumentfile/update/[document_id]/[document_file_id]','icon-pencil-square-o','btn-primary','w');
 		$this->admin_model->set_action_button('ลบข้อมูล','managedocumentfile/delete/[document_id]/[document_file_id]','icon-trash','btn-danger','d');
 		$this->admin_model->set_column_callback('document_file_id','show_seq');
 		$this->admin_model->set_column_callback('document_file_th','show_file');
+		$this->admin_model->set_column_callback('document_file_order','show_order');
 		$this->admin_model->set_column_callback('document_file_status','show_status');
 		
 		$this->admin_model->set_pagination("managedocumentfile/index/".$documentid,$totalrows,$perpage,5);
@@ -127,6 +129,13 @@ class Managedocumentfile extends CI_CONTROLLER{
         admin_redirect('managedocumentfile/index/'.$documentid);
     }
 
+	public function setorder( $movement='up', $documentid=0, $documentfileid=0 ){
+		$message = $this->managedocumentfilemodel->setOrder( $movement, $documentfileid);
+		
+		$this->session->set_flashdata($message['status'],$message['text']);
+		admin_redirect('managedocumentfile/index/'.$documentid);
+	}
+
     /* Default function - Start */
     public function show_seq($text, $row){
         $this->seq++;
@@ -148,6 +157,14 @@ class Managedocumentfile extends CI_CONTROLLER{
             default : return 'ไม่มีสถานะ';
         }
     }
+
+	public function show_order($text, $row){
+		$text = $text.' ';
+		$text .= '(<a href="'.admin_url('managedocumentfile/setorder/up/'.$row['document_id'].'/'.$row['document_file_id']).'"><i class="icon-chevron-up"></i> เลื่อนขึ้น</a>';
+		$text .= ' | ';
+		$text .= '<a href="'.admin_url('managedocumentfile/setorder/down/'.$row['document_id'].'/'.$row['document_file_id']).'"><i class="icon-chevron-down"></i> เลื่อนลง</a>)';
+		return $text;
+	}
     /* Default function -  End */
 
 }

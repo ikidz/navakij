@@ -68,7 +68,7 @@
 					</div>
 				</div>
 
-        <div class="control-group">
+        		<div class="control-group">
 					<label class="control-label" for="document_title_th">ชื่อเรื่อง (ไทย) : *</label>
 					<div class="controls">
 						<input type="text" name="document_title_th" id="document_title_th" value="<?php echo set_value('document_title_th'); ?>" class="span6" />
@@ -93,6 +93,20 @@
 					<label class="control-label" for="document_desc_en">หมายเหตุ (En) : </label>
 					<div class="controls">
 						<input type="text" name="document_desc_en" id="document_desc_en" value="<?php echo set_value('document_desc_en'); ?>" class="span6" />
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label" for="document_content_th">รายละเอียด (ไทย) : </label>
+					<div class="controls">
+						<textarea name="document_content_th" id="document_content_th" rows="5" class="ckeditor"><?php echo set_value('document_content_th'); ?></textarea>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label" for="document_content_en">รายละเอียด (En) : </label>
+					<div class="controls">
+						<textarea name="document_content_en" id="document_content_en" rows="5" class="ckeditor"><?php echo set_value('document_content_en'); ?></textarea>
 					</div>
 				</div>
 

@@ -109,6 +109,20 @@
 				</div>
 
 				<div class="control-group">
+					<label class="control-label" for="document_content_th">รายละเอียด (ไทย) : </label>
+					<div class="controls">
+						<textarea name="document_content_th" id="document_content_th" rows="5" class="ckeditor"><?php echo set_value('document_content_th', $info['document_content_th']); ?></textarea>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label" for="document_content_en">รายละเอียด (En) : </label>
+					<div class="controls">
+						<textarea name="document_content_en" id="document_content_en" rows="5" class="ckeditor"><?php echo set_value('document_content_en', $info['document_content_en']); ?></textarea>
+					</div>
+				</div>
+
+				<div class="control-group">
                     <label class="control-label" for="document_publish_date">วันที่โพสต์ : </label>
                     <div class="controls">
                         <div class="input-append date date-picker" data-date="<?php echo date("d-m-Y", strtotime( ( $info['document_publish_date'] ? $info['document_publish_date'] : date("Y-m-d") ) ) ); ?>" data-date-format="dd-mm-yyyy">
