@@ -1,16 +1,25 @@
 FROM php:7.3-fpm
 
-# Install system dependencies and PHP extensions
+# System libs needed for GD (JPEG/PNG/FreeType), zip, etc.
 RUN apt-get update && apt-get install -y \
-    zip unzip git curl libzip-dev libpng-dev libonig-dev libxml2-dev \
-    && docker-php-ext-install pdo_mysql mysqli zip
+    git curl zip unzip \
+    libzip-dev \
+    libpng-dev \
+    libjpeg62-turbo-dev \
+    libfreetype6-dev \
+    libonig-dev \
+    libxml2-dev \
+ && docker-php-ext-configure gd \
+      --with-freetype-dir=/usr/include \
+      --with-jpeg-dir=/usr/include \
+ && docker-php-ext-install -j$(nproc) gd pdo_mysql mysqli zip exif \
+ && docker-php-ext-enable exif \
+ && rm -rf /var/lib/apt/lists/*
 
-# Set upload max filesize and post max size to 20MB
-RUN echo "upload_max_filesize=20M" > /usr/local/etc/php/conf.d/uploads.ini \
-    && echo "post_max_size=20M" >> /usr/local/etc/php/conf.d/uploads.ini
+# Upload limits
+RUN { \
+    echo "upload_max_filesize=20M"; \
+    echo "post_max_size=20M"; \
+  } > /usr/local/etc/php/conf.d/uploads.ini
 
 WORKDIR /var/www/html
-
-# COPY start.sh /start.sh
-# RUN chmod +x /start.sh
-# CMD ["/start.sh"]
