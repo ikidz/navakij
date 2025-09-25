@@ -16,7 +16,7 @@ class Managedocumentfilemodel extends CI_Model {
         return $query;
     }
 
-    public function get_document_file( $documentid=0, $limit, $offset=0){
+    public function get_document_file( $documentid=0, $limit=0, $offset=0){
         if( $limit > 0 ){
             $query = $this->db->limit( $limit );
         }
@@ -95,7 +95,7 @@ class Managedocumentfilemodel extends CI_Model {
         
         /* Upload - End */
 
-        $total = $this->count_documents( $documentid );
+        $total = $this->count_document_file( $documentid );
         $newOrder = 0;
 
         $this->db->set('document_id', $documentid);
@@ -110,6 +110,8 @@ class Managedocumentfilemodel extends CI_Model {
         $this->db->set('document_file_createdtime', date("Y-m-d H:i:s"));
         $this->db->set('document_file_createdip', $this->input->ip_address());
         $this->db->insert('document_files');
+
+        $this->reOrder( $documentid );
 
         $message['status'] = 'message-success';
         $message['text'] = 'อัพโหลดไฟล์สำเร็จ';
@@ -281,6 +283,7 @@ class Managedocumentfilemodel extends CI_Model {
 
     public function reOrder( $documentid=0 ){
         $lists = $this->get_document_file( $documentid );
+
         if( isset( $lists ) && count( $lists ) > 0 ){
             $i=0;
             foreach( $lists as $list ){
