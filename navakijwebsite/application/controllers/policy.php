@@ -45,14 +45,21 @@ class Policy extends CI_Controller {
         $this->_data['category'] = $this->policy_model->get_categoryinfo_byid( 34 );
         $this->_data['contents'] = $this->policy_model->get_sidebar_byurl( $meta_url );
         $this->_data['display'] = $this->policy_model->get_contentinfo_byid( $contentType, $contentId, $this->_data['contents'] );
-        // print_r( $this->_data['contents'] );
-        // exit();
 
         $this->load->view('included/header', $this->_data);
         $this->load->view('included/navigation');
         $this->load->view('policy/index');
         $this->load->view('included/footer');
 
+    }
+
+    public function index_withoutsidebar( $contentId=0 ){
+        $this->_data['display'] = $this->policy_model->get_contentinfo_byid( 'document', $contentId );
+
+        $this->load->view('included/header', $this->_data);
+        $this->load->view('included/navigation');
+        $this->load->view('policy/index_withoutsidebar');
+        $this->load->view('included/footer');
     }
 
 }
