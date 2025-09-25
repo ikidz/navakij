@@ -36,7 +36,7 @@
                                     <?php if( $settings['has_sub'] == 1 ): ?>
                                         <?php foreach( $categories as $category ): ?>
                                             <optgroup label="<?php echo $category['category_title_th']; ?>">
-                                                <option value="<?php echo $category['category_id']; ?>" <?php echo set_select('category_id', $category['category_id']); ?>>หน้ารวมของหมวด <?php echo $category['category_title_th']; ?></option>
+                                                <option value="<?php echo $category['category_id']; ?>" <?php echo set_select('category_id', $category['category_id'], $category['category_id'] == $info['category_id']); ?>>หน้ารวมของหมวด <?php echo $category['category_title_th']; ?></option>
                                                 <?php
                                                     switch( $settings['category_type'] ){
                                                         case 'articles' :
