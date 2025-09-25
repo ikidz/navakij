@@ -36,6 +36,12 @@
                                     <source src="<?php echo assets_url('video/banner3.mp4'); ?>" type="video/mp4">
                                 </video>
                             </div>
+                        <?php elseif( $info['article_id'] == 9 ): ?>
+                            <div class="images col-12 px-0 px-md-3">
+                                <a href="<?php echo base_url('public/core/uploaded/article/'.$info['article_image_'.$this->_language]); ?>" target="_blank">
+                                    <img src="<?php echo base_url('public/core/uploaded/article/'.$info['article_image_'.$this->_language]); ?>" alt="" class="img-fullwidth" />
+                                </a>
+                            </div>
                         <?php else: ?>
                             <div class="images col-12 px-0 px-md-3">
                                 <a href="<?php echo base_url('public/core/uploaded/article/'.$info['article_image_'.$this->_language]); ?>" data-fancybox>
