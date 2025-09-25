@@ -12,12 +12,9 @@
             </div>
 
             <div id="info" class="content-box col-12 px-0 px-md-3">
-                <h4 class="navy"><i class="fas fa-home"></i> เรื่องราว...</h4>
+                <h4 class="navy"><i class="fas fa-home"></i> <?php echo $intro['article_title_'.$this->_language]; ?></h4>
                 <div class="col-8 px-0 px-md-3 my-3 mx-auto">
-                    <video playsinline="" autoplay="false" controls="" loop="" preload="metadata" id="bgvid" style="width:100%;">
-                        <source src="<?php echo assets_url('video/banner3.webm'); ?>" type="video/webm">
-                        <source src="<?php echo assets_url('video/banner3.mp4'); ?>" type="video/mp4">
-                    </video>
+                    <?php echo $intro['article_desc_'.$this->_language]; ?>
                 </div>
                 <?php /* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut porta nibh, eget fermentum mauris. Integer tristique ullamcorper tellus ut blandit. Nullam porttitor ex id elit aliquam bibendum. Integer vehicula tempor sapien, id pharetra arcu tempor sed. Morbi vehicula commodo ornare. Sed cursus malesuada risus, vitae semper risus vehicula at. Suspendisse porttitor hendrerit magna et tincidunt. Mauris finibus tempor volutpat. Proin in tortor quis sapien malesuada pretium. Sed molestie feugiat augue, nec volutpat augue rhoncus eget. Nullam at lorem mattis, feugiat ante sit amet, rhoncus libero.</p> */ ?>
             </div>

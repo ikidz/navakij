@@ -17,6 +17,13 @@ class Jobsmodel extends CI_Model {
         return $query;
     }
 
+    public function get_intro(){
+        $query = $this->db->where('article_id', 399)
+                            ->get('articles')
+                            ->row_array();
+        return $query;
+    }
+
     public function get_jobs( $locationid=0, $appliable=1, $leavingProfile=0 ){
         if( $locationid > 0 ){
             $query = $this->db->where('location_id', $locationid);
