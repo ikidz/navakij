@@ -39,8 +39,16 @@ class Jobs extends CI_Controller {
 
     public function index(){
 
+        $this->_data['intro'] = $this->jobsmodel->get_intro();
         $this->_data['jobs'] = $this->jobsmodel->get_jobs();
         $this->_data['employees'] = $this->jobsmodel->get_employees();
+
+        if( $this->_data['intro']['article_facebook_image'] !='' && is_file( realpath('public/core/uploaded/article/facebook/'.$this->_data['intro']['article_facebook_image']) ) === true ){
+            list( $width, $height ) = getimagesize( realpath('public/core/uploaded/article/facebook/'.$this->_data['intro']['article_facebook_image']) );
+            $this->_data['meta_image'] = base_url( 'public/core/uploaded/article/facebook/'.$this->_data['intro']['article_facebook_image'] );
+            $this->_data['meta_image_width'] = $width;
+            $this->_data['meta_image_height'] = $height;
+        }
         
         $this->load->view('included/header', $this->_data);
         $this->load->view('included/navigation');
