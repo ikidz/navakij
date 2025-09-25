@@ -456,6 +456,17 @@ $route['(:any)/sustainability-landing'] = 'policy/landing';
 $route['(:any)/sustainability/(:any)'] = 'policy/index/$2';
 /* Company Policy - End */
 
+/* Driving Business for sustainability - Start */
+$dbs = $db->where('document_meta_url', 'driving-business-for-sustainability/driving-business-for-sustainability')
+            ->where('document_status','approved')
+            ->limit(1)
+            ->get('documents')
+            ->row_array();
+if( isset( $dbs ) && count( $dbs ) > 0 ){
+    $route['(:any)/driving-business-for-sustainability-landing'] = 'policy/index_withoutsidebar/'.$dbs['document_id'];
+}
+/* Driving Business for sustainability - End */
+
 $route['debug-document-files'] = 'welcome/debug_documentfiles';
 
 // print_r( $route );
