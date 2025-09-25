@@ -21,8 +21,15 @@ class Jobs extends CI_Controller {
 		/* Settle META for SEO -  End */
 		
         $this->load->model('jobs/jobsmodel');
-		$this->languagemodel->uritosession( $this->uri->uri_string() );
+        $exceptions = [
+            'api',
+            'saveProfile'
+        ];
+        if( in_array( $this->uri->segment(3), $exceptions ) === false ){
+		    $this->languagemodel->uritosession( $this->uri->uri_string() );
+        }
         $this->_language = $this->languagemodel->get_language();
+
         $this->load->library('pagination');
         $this->load->library('form_validation');
 

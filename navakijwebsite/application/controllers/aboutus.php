@@ -20,8 +20,13 @@ class Aboutus extends CI_Controller {
         $this->_data['meta_image_height'] = 630;
 		/* Settle META for SEO -  End */
 		
-		$this->languagemodel->uritosession( $this->uri->uri_string() );
-		$this->_language = $this->languagemodel->get_language();
+        $exeptions = [
+            'getProfile'
+        ];
+        if( in_array( $this->uri->segment(3), $exeptions ) === false ){
+            $this->languagemodel->uritosession( $this->uri->uri_string() );
+        }
+        $this->_language = $this->languagemodel->get_language();
 
 		$this->load->library('pagination');
 		$this->load->model('aboutus/aboutusmodel');
