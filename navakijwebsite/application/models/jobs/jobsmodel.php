@@ -18,7 +18,7 @@ class Jobsmodel extends CI_Model {
     }
 
     public function get_intro(){
-        $query = $this->db->where('article_id', 399)
+        $query = $this->db->where('article_meta_url', 'intro-page/our-story')
                             ->get('articles')
                             ->row_array();
         return $query;
