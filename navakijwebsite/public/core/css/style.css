@@ -964,6 +964,9 @@ li {
   -moz-opacity: 0;
   -o-opacity: 0;
 }
+html{
+  filter: grayscale(70%);
+}
 body {
   font-family: "TradeGothic", "supermarket", helvetica, sans-serif;
 }
