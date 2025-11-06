@@ -1045,7 +1045,7 @@ ul:not(.select2-results__options) li {
 }
 .content-box table:not(.noborder) tr td {
   padding: 10px !important;
-  text-align: center;
+  /* text-align: center; */
 }
 .content-box table thead th{
   text-align:center;
